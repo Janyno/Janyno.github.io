@@ -1,0 +1,41 @@
+<div class="row align-items-start">
+    <!-- Card for "Games to Play" -->
+    <div class="col d-flex flex-column">
+      <div class="card">
+        <div class="card-header">
+          <h5>Games to Play</h5>
+        </div>
+        <div class="card-body flex-fill">
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let game of toPlay">
+              {{ game.name }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Card for "Games to 100%" -->
+    <div class="col d-flex flex-column">
+      <div class="card">
+        <div class="card-header">
+          <h5>Games to 100%</h5>
+        </div>
+        <div class="card-body flex-fill">
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let game of toComplete">
+              {{ game.name }}
+              <div class="progress mt-2">
+                <div class="progress-bar" role="progressbar" [style.width]="game.progress + '%'" [attr.aria-valuenow]="game.progress" aria-valuemin="0" aria-valuemax="100">
+                  {{ game.progress }}%
+                </div>
+              </div>
+              <p class="mt-2">{{ game.notes }}</p>
+              <a class="mt-2" [href]="game.link" target="_blank">{{ game.link }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+  
