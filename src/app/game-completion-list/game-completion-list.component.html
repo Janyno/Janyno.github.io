@@ -1,5 +1,4 @@
 <div class="row align-items-start">
-    <!-- Card for "Games to Play" -->
     <div class="col d-flex flex-column">
       <div class="card">
         <div class="card-header">
@@ -8,6 +7,7 @@
         <div class="card-body flex-fill">
           <ul class="list-group">
             <li class="list-group-item" *ngFor="let game of toPlay">
+              <i class="material-icons icon" *ngIf="game.status" [style.color]="statusColorMap[game.status]">circle</i>
               {{ game.name }}
             </li>
           </ul>
@@ -15,7 +15,6 @@
       </div>
     </div>
   
-    <!-- Card for "Games to 100%" -->
     <div class="col d-flex flex-column">
       <div class="card">
         <div class="card-header">
