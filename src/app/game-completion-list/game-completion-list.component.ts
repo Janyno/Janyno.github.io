@@ -28,7 +28,7 @@ export class GameCompletionListComponent {
   ]
 
   toComplete: Game [] = [
-    {name: 'Red Dead Redemption 2', progress: 70, link: 'https://www.ign.com/maps/red-dead-redemption-2/world'},
+    {name: 'Red Dead Redemption 2', progress: 70, link: 'https://www.powerpyx.com/red-dead-redemption-2-all-animal-locations-zoologist-skin-deep/', link2: 'https://www.powerpyx.com/red-dead-redemption-2-all-exotics-locations/'},
     {name: 'Yakuza 0', progress: 60},
     {name: 'Dying Light 2', progress: 40}
   ]

@@ -31,6 +31,10 @@
               </div>
               <p class="mt-2">{{ game.notes }}</p>
               <a class="mt-2" [href]="game.link" target="_blank">{{ game.link }}</a>
+              <div *ngIf="game.link2">
+                <br>
+              </div>
+              <a class="mt-2" [href]="game.link2" target="_blank">{{ game.link2 }}</a>
             </li>
           </ul>
         </div>

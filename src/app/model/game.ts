@@ -3,5 +3,6 @@ export interface Game {
     status?: 'not_began' | 'in_progress' | 'completed',
     progress?: number,
     notes?: string,
-    link?: string
+    link?: string,
+    link2?: string
 }
