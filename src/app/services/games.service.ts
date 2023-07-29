@@ -30,16 +30,6 @@ export class GamesService {
 
   toComplete: Game[] = [
     {
-      name: 'Red Dead Redemption 2', 
-      progress: 70, 
-      links: [
-        'https://www.powerpyx.com/red-dead-redemption-2-all-animal-locations-zoologist-skin-deep/', 
-        'https://www.powerpyx.com/red-dead-redemption-2-all-exotics-locations/',
-        'https://www.powerpyx.com/red-dead-redemption-2-all-hunting-request-locations/',
-        'https://www.ign.com/wikis/red-dead-redemption-2/Treasure_Maps'
-    ]
-  },
-    {
       name: 'Yakuza 0', 
       progress: 60},
     {
