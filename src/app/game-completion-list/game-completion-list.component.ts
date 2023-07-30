@@ -9,13 +9,13 @@ import { GamesService } from '../services/games.service';
 })
 export class GameCompletionListComponent {
   toPlay: Game[]
-  toComplete: Game[]
+  toRevisit: Game[]
 
   constructor(private gamesService: GamesService) {
     const games = this.gamesService.getGames()
 
     this.toPlay = games.toPlay
-    this.toComplete = games.toComplete
+    this.toRevisit = games.toRevisit
   }
 
   statusColorMap: { [status: string]: string } = {

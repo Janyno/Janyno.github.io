@@ -28,34 +28,16 @@ export class GamesService {
     {name: 'Yakuza 7', status: 'not_began'}
   ]
 
-  toComplete: Game[] = [
-    {
-      name: 'Red Dead Redemption 2', 
-      progress: 70, 
-      links: [
-        'https://www.powerpyx.com/red-dead-redemption-2-all-animal-locations-zoologist-skin-deep/', 
-        'https://www.powerpyx.com/red-dead-redemption-2-all-exotics-locations/',
-        'https://www.powerpyx.com/red-dead-redemption-2-all-hunting-request-locations/',
-        'https://www.ign.com/wikis/red-dead-redemption-2/Treasure_Maps'
-      ]
-    },
-    {
-      name: 'Yakuza 0', 
-      progress: 60},
-    {
-      name: 'Dying Light 2', 
-      notes: ['City Alignment 7 - Boot Licker Achievement', 'Fit as a Fiddle, Ironheart | 2 Playthroughs all Injectors'], progress: 40,
-      links: [
-      'https://www.powerpyx.com/dying-light-2-all-memento-locations-collectible-notes/',
-      'https://www.powerpyx.com/dying-light-2-all-tape-locations-collectible-recordings/'
-    ]}
+  toRevisit: Game[] = [
+    {name: 'Yakuza 0'},
+    {name: 'Dying Light 2'}
   ]
 
   getGames() {
-    return {toPlay: this.toPlay, toComplete: this.toComplete}
+    return {toPlay: this.toPlay, toRevisit: this.toRevisit}
   }
   
   getGameData() {
-    return {toPlayAmount: this.toPlay.length, toCompleteAmount: this.toComplete.length}
+    return {toPlayAmount: this.toPlay.length, toRevisitAmount: this.toRevisit.length}
   }
 }
