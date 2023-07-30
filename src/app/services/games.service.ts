@@ -25,19 +25,27 @@ export class GamesService {
     {name: 'Quantum Break', status: 'not_began'},
     {name: 'Spyro Trilogy', status: 'not_began'},
     {name: 'Above Snakes', status: 'not_began'},
-    {name: 'Yakuza 7', status: 'not_began'}
+    {name: 'Yakuza 7', status: 'not_began'},
+    {name: 'Jurassic Park Evolution 2', status: 'not_began'}
   ]
 
   toRevisit: Game[] = [
     {name: 'Yakuza 0'},
-    {name: 'Dying Light 2'}
+    {name: 'Dying Light 2'},
+    {name: 'Prehistoric Kingdom'}
+  ]
+
+  pileOfShame: Game[] = [
+    {name: 'VR games lol'},
+    {name: 'Project Zomboid'},
+    {name: 'Miss Neko Teile'}
   ]
 
   getGames() {
-    return {toPlay: this.toPlay, toRevisit: this.toRevisit}
+    return {toPlay: this.toPlay, toRevisit: this.toRevisit, pileOfShame: this.pileOfShame}
   }
   
   getGameData() {
-    return {toPlayAmount: this.toPlay.length, toRevisitAmount: this.toRevisit.length}
+    return {toPlayAmount: this.toPlay.length, toRevisitAmount: this.toRevisit.length, pileOfShameAmount: this.pileOfShame.length}
   }
 }

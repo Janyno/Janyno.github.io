@@ -1,4 +1,5 @@
 export interface DashboardData {
     toPlayAmount: number,
-    toRevisitAmount: number
+    toRevisitAmount: number,
+    pileOfShameAmount: number
 }
