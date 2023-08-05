@@ -6,8 +6,6 @@ import { Game } from '../model/game';
 })
 export class GamesService {
 
-  constructor() { }
-
   toPlay: Game[] = [
     {name: 'TRADER LIFE SIMULATOR', status: 'not_began'},
     {name: 'Outward', status: 'not_began'},
@@ -30,15 +28,18 @@ export class GamesService {
   ]
 
   toRevisit: Game[] = [
-    {name: 'Yakuza 0'},
-    {name: 'Dying Light 2'},
-    {name: 'Prehistoric Kingdom'}
+    {name: 'Prehistoric Kingdom'},
+    {name: 'Scum'},
   ]
 
   pileOfShame: Game[] = [
-    {name: 'VR games lol'},
+    {name: 'Into the Radius'},
+    {name: 'VTOL VR'},
+    {name: 'Dragon Fist VR Kung Fu'},
+    {name: 'Contractors VR'},
     {name: 'Project Zomboid'},
-    {name: 'Miss Neko Teile'}
+    {name: 'Miss Neko 2'},
+    {name: 'Hunie Pop 2'}
   ]
 
   getGames() {
