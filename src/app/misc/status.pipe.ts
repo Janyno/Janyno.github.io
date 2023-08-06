@@ -12,6 +12,14 @@ export class StatusPipe implements PipeTransform {
         return 'In Progress';
       case 'completed':
         return 'Completed';
+      case 'aborted':
+        return 'Aborted';
+      case 'ongoing':
+        return 'Ongoing';
+      case 'on_pause_maybe':
+        return 'On Pause, maybe continue';
+      case 'watch_new_season':
+        return 'Need to watch new Season / EPs';
       default:
         return value;
     }

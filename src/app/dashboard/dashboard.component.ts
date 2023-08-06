@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { GamesService } from '../services/games.service';
 import { DashboardData } from '../model/dashboardData';
+import { AnimeService } from '../services/anime.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,7 +11,7 @@ import { DashboardData } from '../model/dashboardData';
 export class DashboardComponent {
   data: DashboardData
 
-  constructor(private gamesService: GamesService) {
-    this.data = this.gamesService.getGameData()
+  constructor(private gamesService: GamesService, private animeService: AnimeService) {
+    this.data = {gameData: this.gamesService.getGameData(), animeAmount: this.animeService.getAnimeData()}
   }
 }

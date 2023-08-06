@@ -1,0 +1,45 @@
+<div class="col d-flex flex-column">
+    <div class="card">
+      <div class="card-header">
+        <h5>My Anime List</h5>
+      </div>
+      <div class="card-body flex-fill">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="btn-group" role="group">
+              <button class="btn btn-primary" (click)="toggleSortingDirection()">
+                <span *ngIf="sortingDirection === 'asc'">▲</span>
+                <span *ngIf="sortingDirection === 'desc'">▼</span>
+              </button>
+            </div>
+            <div ngbDropdown class="d-inline-block">
+              <button class="btn btn-primary dropdown-toggle" id="filterDropdown" ngbDropdownToggle>
+                {{ selectedFilter ? selectedFilter : 'Show All' }}
+              </button>
+              <div ngbDropdownMenu aria-labelledby="filterDropdown">
+                <button
+                  ngbDropdownItem
+                  (click)="selectedFilter = null; filterAnimeByStatus()"
+                  [class.active]="!selectedFilter"
+                >
+                  Show All
+                </button>
+                <button
+                  *ngFor="let status of availableStatuses"
+                  ngbDropdownItem
+                  (click)="selectedFilter = status; filterAnimeByStatus()"
+                  [class.active]="selectedFilter === status"
+                >
+                  {{ status | status}}
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item d-flex align-items-center" *ngFor="let anime of animeList; let i = index">
+            <i class="material-icons icon" *ngIf="anime.status" [style.color]="statusColorMap[anime.status]">circle</i>
+            <span class="flex-grow-1">{{ anime.name }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>

@@ -9,6 +9,7 @@ import { GameCompletionListComponent } from './game-completion-list/game-complet
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StatusPipe } from './misc/status.pipe';
+import { AnimeListComponent } from './anime-list/anime-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { StatusPipe } from './misc/status.pipe';
     HeaderComponent,
     GameCompletionListComponent,
     DashboardComponent,
-    StatusPipe
+    StatusPipe,
+    AnimeListComponent
   ],
   imports: [
     BrowserModule,

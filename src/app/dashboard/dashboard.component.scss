@@ -1,0 +1,13 @@
+@keyframes rainbow {
+    0% { color: red; }
+    16.7% { color: orange; }
+    33.3% { color: yellow; }
+    50% { color: green; }
+    66.7% { color: blue; }
+    83.3% { color: indigo; }
+    100% { color: violet; }
+}
+
+h4 {
+    animation: rainbow 10s linear infinite;
+}
