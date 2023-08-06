@@ -8,13 +8,15 @@ import { HeaderComponent } from './header/header.component';
 import { GameCompletionListComponent } from './game-completion-list/game-completion-list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { StatusPipe } from './misc/status.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     GameCompletionListComponent,
-    DashboardComponent
+    DashboardComponent,
+    StatusPipe
   ],
   imports: [
     BrowserModule,

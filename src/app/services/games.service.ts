@@ -7,24 +7,24 @@ import { Game } from '../model/game';
 export class GamesService {
 
   toPlay: Game[] = [
-    {name: 'TRADER LIFE SIMULATOR', status: 'not_began'},
-    {name: 'Outward', status: 'not_began'},
-    {name: 'Tales of Arise', status: 'not_began'},
-    {name: 'Dyson Sphere Program', status: 'not_began'},
-    {name: 'Beyond: Two Souls', status: 'not_began'},
-    {name: 'Chernobylite', status: 'not_began'},
-    {name: 'God of War', status: 'not_began'},
-    {name: 'GTA 3', status: 'not_began'},
-    {name: 'GTA SA', status: 'not_began'},
-    {name: 'GTA VC', status: 'not_began'},
-    {name: 'Life is Strange 2', status: 'not_began'},
-    {name: 'Mad Max', status: 'not_began'},
-    {name: 'NieR: Automata', status: 'not_began'},
-    {name: 'Quantum Break', status: 'not_began'},
-    {name: 'Spyro Trilogy', status: 'not_began'},
-    {name: 'Above Snakes', status: 'not_began'},
-    {name: 'Yakuza 7', status: 'not_began'},
-    {name: 'Jurassic Park Evolution 2', status: 'not_began'}
+    {name: 'TRADER LIFE SIMULATOR', status: 'not_began', playtime: 3.5},
+    {name: 'Outward', status: 'not_began', playtime: 33.5},
+    {name: 'Tales of Arise', status: 'not_began', playtime: 40.5},
+    {name: 'Dyson Sphere Program', status: 'not_began', playtime: 66.5},
+    {name: 'Beyond: Two Souls', status: 'not_began', playtime: 10.5},
+    {name: 'Chernobylite', status: 'in_progress', playtime: 14},
+    {name: 'God of War', status: 'not_began', playtime: 20.5},
+    {name: 'GTA 3', status: 'not_began', playtime: 15},
+    {name: 'GTA SA', status: 'not_began', playtime: 30.5},
+    {name: 'GTA VC', status: 'not_began', playtime: 18},
+    {name: 'Life is Strange 2', status: 'not_began', playtime: 16},
+    {name: 'Mad Max', status: 'not_began', playtime: 20},
+    {name: 'NieR: Automata', status: 'not_began', playtime: 21},
+    {name: 'Quantum Break', status: 'not_began', playtime: 10},
+    {name: 'Spyro Trilogy', status: 'not_began', playtime: 17},
+    {name: 'Above Snakes', status: 'not_began', playtime: 15},
+    {name: 'Yakuza 7', status: 'not_began', playtime: 45.5},
+    {name: 'Jurassic World Evolution 2', status: 'not_began', playtime: 7}
   ]
 
   toRevisit: Game[] = [
@@ -39,7 +39,7 @@ export class GamesService {
     {name: 'Contractors VR'},
     {name: 'Project Zomboid'},
     {name: 'Miss Neko 2'},
-    {name: 'Hunie Pop 2'}
+    {name: 'HuniePop 2'}
   ]
 
   getGames() {
