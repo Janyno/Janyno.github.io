@@ -1,49 +1,52 @@
-<div class="row align-items-start">
+<div class="container" appDaytimeBackground>
+  <div class="row align-items-start">
     <div class="col d-flex flex-column">
       <div class="card">
         <div class="card-header">
           <h5>Games to Play</h5>
         </div>
         <div class="card-body flex-fill">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <div class="btn-group" role="group">
-                <button class="btn btn-primary" (click)="toggleSortingDirection()">
-                  <span *ngIf="sortingDirection === 'asc'">▲</span>
-                  <span *ngIf="sortingDirection === 'desc'">▼</span>
-                </button>
-              </div>
-              <div ngbDropdown class="d-inline-block">
-                <button class="btn btn-primary dropdown-toggle" id="filterDropdown" ngbDropdownToggle>
-                  {{ selectedFilter ? selectedFilter : 'Show All' }}
-                </button>
-                <div ngbDropdownMenu aria-labelledby="filterDropdown">
-                  <button
-                    ngbDropdownItem
-                    (click)="selectedFilter = null; filterGamesByStatus()"
-                    [class.active]="!selectedFilter"
-                  >
-                    Show All
-                  </button>
-                  <button
-                    *ngFor="let status of availableStatuses"
-                    ngbDropdownItem
-                    (click)="selectedFilter = status; filterGamesByStatus()"
-                    [class.active]="selectedFilter === status"
-                  >
-                    {{ status | status}}
+          <div class="list-container">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="btn-group" role="group">
+                  <button class="btn btn-primary" (click)="toggleSortingDirection()">
+                    <span *ngIf="sortingDirection === 'asc'">▲</span>
+                    <span *ngIf="sortingDirection === 'desc'">▼</span>
                   </button>
                 </div>
-              </div>
-              <span> | </span>
-              <button class="btn btn-primary w-48" (click)="highlightRandomGame()">Random</button>
-            </li>
-            <li class="list-group-item d-flex align-items-center" *ngFor="let game of toPlay; let i = index" [class.highlighted]="highlightedIndex === i">
-              <i class="material-icons icon" *ngIf="game.status" [style.color]="statusColorMap[game.status]">circle</i>
-              <span class="flex-grow-1">{{ game.name }}</span>
-              <span class="text-end">{{ game.playtime }} Std.</span>
-            </li>
-          </ul>
+                <div ngbDropdown class="d-inline-block">
+                  <button class="btn btn-primary dropdown-toggle" id="filterDropdown" ngbDropdownToggle>
+                    {{ selectedFilter ? selectedFilter : 'Show All' }}
+                  </button>
+                  <div ngbDropdownMenu aria-labelledby="filterDropdown">
+                    <button
+                      ngbDropdownItem
+                      (click)="selectedFilter = null; filterGamesByStatus()"
+                      [class.active]="!selectedFilter"
+                    >
+                      Show All
+                    </button>
+                    <button
+                      *ngFor="let status of availableStatuses"
+                      ngbDropdownItem
+                      (click)="selectedFilter = status; filterGamesByStatus()"
+                      [class.active]="selectedFilter === status"
+                    >
+                      {{ status | status}}
+                    </button>
+                  </div>
+                </div>
+                <span> | </span>
+                <button class="btn btn-primary w-48" (click)="highlightRandomGame()">Random</button>
+              </li>
+              <li class="list-group-item d-flex align-items-center" *ngFor="let game of toPlay; let i = index" [class.highlighted]="highlightedIndex === i">
+                <i class="material-icons icon" *ngIf="game.status" [style.color]="statusColorMap[game.status]">circle</i>
+                <span class="flex-grow-1">{{ game.name }}</span>
+                <span class="text-end">{{ game.playtime }} Std.</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -54,11 +57,13 @@
           <h5>Games to Revisit</h5>
         </div>
         <div class="card-body flex-fill">
-          <ul class="list-group">
-            <li class="list-group-item" *ngFor="let game of toRevisit">
-              {{ game.name }}
-            </li>
-          </ul>
+          <div class="list-container">
+            <ul class="list-group">
+              <li class="list-group-item" *ngFor="let game of toRevisit">
+                {{ game.name }}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -69,13 +74,15 @@
           <h5>Pile of Shame</h5>
         </div>
         <div class="card-body flex-fill">
-          <ul class="list-group">
-            <li class="list-group-item" *ngFor="let game of pileOfShame">
-              {{ game.name }}
-            </li>
-          </ul>
+          <div class="list-container">
+            <ul class="list-group">
+              <li class="list-group-item" *ngFor="let game of pileOfShame">
+                {{ game.name }}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
 </div>
-  
+</div>

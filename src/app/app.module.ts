@@ -10,6 +10,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StatusPipe } from './misc/status.pipe';
 import { AnimeListComponent } from './anime-list/anime-list.component';
+import { BackgroundDirective } from './background.directive';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { AnimeListComponent } from './anime-list/anime-list.component';
     GameCompletionListComponent,
     DashboardComponent,
     StatusPipe,
-    AnimeListComponent
+    AnimeListComponent,
+    BackgroundDirective
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,7 @@ import { AnimeListComponent } from './anime-list/anime-list.component';
     NgbModule
   ]
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
