@@ -1,13 +1,13 @@
 <div class="container">
   <div class="col d-flex flex-column">
-    <div class="card">
+    <div class="card bg-dark">
       <div class="card-header">
         <h5>My Anime List</h5>
       </div>
       <div class="card-body flex-fill">
         <div class="list-container">
           <ul class="list-group">
-            <li class="list-group-item">
+            <li class="list-group-item bg-dark">
               <div class="btn-group" role="group">
                 <button class="btn btn-primary" (click)="toggleSortingDirection()">
                   <span *ngIf="sortingDirection === 'asc'">▲</span>
@@ -37,7 +37,7 @@
                 </div>
               </div>
             </li>
-            <li class="list-group-item d-flex align-items-center" *ngFor="let anime of animeList; let i = index">
+            <li class="list-group-item d-flex align-items-center bg-dark" *ngFor="let anime of animeList; let i = index">
               <i class="material-icons icon" *ngIf="anime.status" [style.color]="statusColorMap[anime.status]">circle</i>
               <span class="flex-grow-1">{{ anime.name }}</span>
             </li>
