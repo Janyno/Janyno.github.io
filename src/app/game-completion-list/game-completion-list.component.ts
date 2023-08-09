@@ -14,7 +14,7 @@ export class GameCompletionListComponent {
   gameList: Game[] = []
   highlightedIndex: number | null = null
   sortingDirection: 'asc' | 'desc' = 'asc'
-  availableStatuses: string[] = ['in_progress', 'completed'];
+  availableStatuses: string[] = ['not_began', 'in_progress', 'completed'];
   selectedFilter: string | null = null;
 
   constructor(private gamesService: GamesService) {
