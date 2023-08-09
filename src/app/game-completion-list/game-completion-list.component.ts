@@ -81,4 +81,16 @@ export class GameCompletionListComponent {
         return value;
     }
   }
+
+  getAmountOfStatus(status: string): number {
+    let amount: number = 0
+
+    for (let i = 0; i < this.gameList.length; i++) {
+      if(this.gameList[i].status === status) {
+        amount++
+      }
+    }
+
+    return amount
+  }
 }

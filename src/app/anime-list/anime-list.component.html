@@ -33,6 +33,7 @@
                     [class.active]="selectedFilter === status"
                   >
                     {{ status | status}}
+                    <span class="text-end">{{ getAmountOfStatus(status) }}</span>
                   </button>
                 </div>
               </div>

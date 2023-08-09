@@ -26,13 +26,14 @@ export class GamesService {
     {name: 'Yakuza 7', status: 'not_began', playtime: 45.5},
     {name: 'Jurassic World Evolution 2', status: 'completed', playtime: 7},
     {name: 'Half Life Alyx', status: 'in_progress', playtime: 14},
-    {name: 'Into the Radius'},
-    {name: 'VTOL VR'},
-    {name: 'Dragon Fist VR Kung Fu'},
-    {name: 'Contractors VR'},
-    {name: 'Project Zomboid'},
-    {name: 'Miss Neko 2'},
-    {name: 'HuniePop 2'}
+    {name: 'Into the Radius', status: 'not_began'},
+    {name: 'VTOL VR', status: 'not_began'},
+    {name: 'Dragon Fist VR Kung Fu', status: 'not_began'},
+    {name: 'Contractors VR', status: 'not_began'},
+    {name: 'Project Zomboid', status: 'not_began'},
+    {name: 'Miss Neko 1', status: 'completed'},
+    {name: 'Miss Neko 2', status: 'not_began'},
+    {name: 'HuniePop 2', status: 'not_began'}
   ]
 
   toRevisit: Game[] = [

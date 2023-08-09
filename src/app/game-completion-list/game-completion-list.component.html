@@ -34,6 +34,7 @@
                       [class.active]="selectedFilter === status"
                     >
                       {{ status | status}}
+                      <span class="text-end">{{ getAmountOfStatus(status) }}</span>
                     </button>
                   </div>
                 </div>
@@ -43,7 +44,10 @@
               <li class="list-group-item d-flex align-items-center" *ngFor="let game of toPlay; let i = index" [class.highlighted]="highlightedIndex === i">
                 <i class="material-icons icon" *ngIf="game.status" [style.color]="statusColorMap[game.status]">circle</i>
                 <span class="flex-grow-1">{{ game.name }}</span>
-                <span class="text-end">{{ game.playtime }} Std.</span>
+                <span class="text-end" *ngIf="game.playtime;else noPlaytime">{{ game.playtime }} Hrs.</span>
+                <ng-template #noPlaytime>
+                  <span class="text-end">??? Hrs.</span>
+                </ng-template>
               </li>
             </ul>
           </div>

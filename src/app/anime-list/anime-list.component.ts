@@ -69,4 +69,16 @@ export class AnimeListComponent {
         return value;
     }
   }
+
+  getAmountOfStatus(status: string): number {
+    let amount: number = 0
+
+    for (let i = 0; i < this.animeListBackup.length; i++) {
+      if(this.animeListBackup[i].status === status) {
+        amount++
+      }
+    }
+
+    return amount
+  }
 }
