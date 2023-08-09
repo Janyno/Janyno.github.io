@@ -10,7 +10,6 @@ import { GamesService } from '../services/games.service';
 export class GameCompletionListComponent {
   toPlay: Game[]
   toRevisit: Game[]
-  pileOfShame: Game[]
   gameList: Game[] = []
   highlightedIndex: number | null = null
   sortingDirection: 'asc' | 'desc' = 'asc'
@@ -22,7 +21,6 @@ export class GameCompletionListComponent {
 
     this.toPlay = games.toPlay
     this.toRevisit = games.toRevisit
-    this.pileOfShame = games.pileOfShame
     this.gameList = this.toPlay
   }
 

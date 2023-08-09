@@ -25,14 +25,7 @@ export class GamesService {
     {name: 'Above Snakes', status: 'not_began', playtime: 15},
     {name: 'Yakuza 7', status: 'not_began', playtime: 45.5},
     {name: 'Jurassic World Evolution 2', status: 'completed', playtime: 7},
-    {name: 'Half Life Alyx', status: 'in_progress', playtime: 14}
-  ]
-
-  toRevisit: Game[] = [
-    {name: 'Scum'}
-  ]
-
-  pileOfShame: Game[] = [
+    {name: 'Half Life Alyx', status: 'in_progress', playtime: 14},
     {name: 'Into the Radius'},
     {name: 'VTOL VR'},
     {name: 'Dragon Fist VR Kung Fu'},
@@ -42,11 +35,15 @@ export class GamesService {
     {name: 'HuniePop 2'}
   ]
 
+  toRevisit: Game[] = [
+    {name: 'Scum'}
+  ]
+
   getGames() {
-    return {toPlay: this.toPlay, toRevisit: this.toRevisit, pileOfShame: this.pileOfShame}
+    return {toPlay: this.toPlay, toRevisit: this.toRevisit}
   }
   
   getGameData() {
-    return {toPlayAmount: this.toPlay.length, toRevisitAmount: this.toRevisit.length, pileOfShameAmount: this.pileOfShame.length}
+    return {toPlayAmount: this.toPlay.length, toRevisitAmount: this.toRevisit.length}
   }
 }
