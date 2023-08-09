@@ -24,12 +24,12 @@ export class GamesService {
     {name: 'Spyro Trilogy', status: 'not_began', playtime: 17},
     {name: 'Above Snakes', status: 'not_began', playtime: 15},
     {name: 'Yakuza 7', status: 'not_began', playtime: 45.5},
-    {name: 'Jurassic World Evolution 2', status: 'not_began', playtime: 7}
+    {name: 'Jurassic World Evolution 2', status: 'completed', playtime: 7},
+    {name: 'Half Life Alyx', status: 'in_progress', playtime: 14}
   ]
 
   toRevisit: Game[] = [
-    {name: 'Prehistoric Kingdom'},
-    {name: 'Scum'},
+    {name: 'Scum'}
   ]
 
   pileOfShame: Game[] = [
