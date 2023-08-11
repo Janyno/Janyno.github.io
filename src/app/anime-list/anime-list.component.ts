@@ -11,7 +11,7 @@ export class AnimeListComponent {
   animeList: Anime[]
   animeListBackup: Anime[] = []
   sortingDirection: 'asc' | 'desc' = 'asc'
-  availableStatuses: string[] = ['ongoing', 'aborted', 'on_pause_maybe', 'watch_new_season', 'completed'];
+  availableStatuses: string[] = ['aborted', 'watching', 'wait_new_sep', 'on_pause_maybe', 'watch_new_season', 'completed'];
   selectedFilter: string | null = null;
 
   constructor(private animeService: AnimeService) {
@@ -22,9 +22,10 @@ export class AnimeListComponent {
 
   statusColorMap: { [status: string]: string } = {
     aborted: 'maroon',
-    ongoing: 'indigo',
+    watching: 'indigo',
     on_pause_maybe: 'slateblue',
     watch_new_season: 'gold',
+    wait_new_sep: 'orange',
     completed: 'forestgreen'
   };
 
@@ -57,14 +58,16 @@ export class AnimeListComponent {
     switch (value) {
       case 'aborted':
         return 'Aborted';
-      case 'ongoing':
-        return 'Ongoing';
+      case 'watching':
+        return 'Watching';
       case 'on_pause_maybe':
         return 'On Pause, maybe continue';
       case 'watch_new_season':
         return 'Need to watch new Season / EPs';
       case 'completed':
         return 'Completed';
+      case 'wait_new_sep':
+          return 'Wait for new Season / EPs';
       default:
         return value;
     }

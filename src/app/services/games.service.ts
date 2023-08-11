@@ -37,7 +37,11 @@ export class GamesService {
   ]
 
   toRevisit: Game[] = [
-    {name: 'Scum'}
+    {name: 'Scum'},
+    {name: 'Hydroneer'},
+    {name: 'Skyrim'},
+    {name: 'Surgeon Simulator VR'},
+    {name: 'Dead by Daylight'}
   ]
 
   getGames() {
