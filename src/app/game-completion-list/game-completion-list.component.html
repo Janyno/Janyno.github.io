@@ -7,7 +7,7 @@
         </div>
         <div class="card-body flex-fill">
           <div class="list-container">
-            <ul class="list-group">
+            <ul class="list-group" style="max-height: 300px; overflow-y: auto;">
               <li class="list-group-item">
                 <div class="btn-group" role="group">
                   <button class="btn btn-primary" (click)="toggleSortingDirection()">
@@ -39,12 +39,12 @@
                   </div>
                 </div>
                 <span> | </span>
-                <button class="btn btn-primary w-48" (click)="highlightRandomGame()">Random</button>
+                <button class="btn btn-primary w-47" (click)="highlightRandomGame()">Random</button>
               </li>
               <li class="list-group-item d-flex align-items-center" *ngFor="let game of toPlay; let i = index" [class.highlighted]="highlightedIndex === i">
                 <i class="material-icons icon" *ngIf="game.status" [style.color]="statusColorMap[game.status]">circle</i>
                 <span class="flex-grow-1">{{ game.name }}</span>
-                <span class="text-end" *ngIf="game.playtime;else noPlaytime">{{ game.playtime }} Hrs.</span>
+                <span class="text-end" *ngIf="game.playtime; else noPlaytime">{{ game.playtime }} Hrs.</span>
                 <ng-template #noPlaytime>
                   <span class="text-end">??? Hrs.</span>
                 </ng-template>
@@ -62,7 +62,7 @@
         </div>
         <div class="card-body flex-fill">
           <div class="list-container">
-            <ul class="list-group">
+            <ul class="list-group" style="max-height: 300px; overflow-y: auto;">
               <li class="list-group-item" *ngFor="let game of toRevisit">
                 {{ game.name }}
               </li>

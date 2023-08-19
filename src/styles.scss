@@ -1,10 +1,25 @@
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 
-body {
+/* Set a semi-transparent white background for the blur effect */
+.container {
+  background: rgba(113, 111, 111, 0.4);
+  /* Apply the blur effect to the container */
+  backdrop-filter: blur(5px);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Responsive Background Images */
+.daytime-bg,
+.daytime-bg-alt1,
+.nighttime-bg,
+.nighttime-bg-alt1,
+.winter-day-bg,
+.winter-night-bg {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 90vh;
+  background-position: center center;
 }
 
 .daytime-bg {
@@ -32,40 +47,62 @@ body {
   background-image: url('assets/images/minecraftScreenshots/winter.webp');
 }
 
-.container {
-  background: rgba(113, 111, 111, 0.4); /* Set a semi-transparent white background for the blur effect */
-  backdrop-filter: blur(5px); /* Apply the blur effect to the container */
-  padding-top: 10px;
-  padding-bottom: 10px;
+/* Scrollbar Styles */
+.list-container {
+  max-height: 82.5vh;
+  overflow-y: auto;
+  scrollbar-color: darkgrey slategrey;
+  scrollbar-width: thin;
+}
 
-  .list-container {
-    max-height: 82.5vh; /* Adjust the value to set the desired maximum height */
-    overflow-y: auto; /* Add a vertical scrollbar when the content overflows */
+/* Custom scrollbar styles */
+.list-container::-webkit-scrollbar {
+  width: 0.6em;
+}
 
-    /* Custom scrollbar styles */
-    scrollbar-color: darkgrey slategrey; /* Scrollbar thumb and track colors */
-    scrollbar-width: thin; /* Width of the scrollbar */
+.list-container::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 5px;
+}
+
+.list-container::-webkit-scrollbar-thumb:hover {
+  background-color: grey;
+}
+
+.list-container::-webkit-scrollbar-track {
+  background-color: slategrey;
+}
+
+/* Text Color */
+h2, h3, h4, h5, p, span {
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust the height for mobile devices */
   }
 
-  /* If you want to hide the horizontal scrollbar */
-  .list-container::-webkit-scrollbar {
-    width: 0.6em;
-  }
-
-  .list-container::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    border-radius: 5px; /* Rounded corners for the scrollbar thumb */
-  }
-
-  .list-container::-webkit-scrollbar-thumb:hover {
-    background-color: grey; /* Color on hover */
-  }
-
-  .list-container::-webkit-scrollbar-track {
-    background-color: slategrey;
+  .container {
+    padding-top: 5px; /* Adjust padding for mobile */
+    padding-bottom: 5px; /* Adjust padding for mobile */
   }
 }
 
-h2, h3, h4, h5, p, span {
-  color: rgba(255, 255, 255, 0.55) !important;
+/* Media Query for Desktop Devices */
+@media (min-width: 768px) {
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 60px); /* Adjust the height for desktop devices, accounting for header */
+    overflow-y: hidden; /* Disable scrolling */
+  }
+
+  .container {
+    padding-top: 20px; /* Adjust padding for desktop */
+    padding-bottom: 20px; /* Adjust padding for desktop */
+  }
 }

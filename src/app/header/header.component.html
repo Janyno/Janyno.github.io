@@ -1,18 +1,21 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="d-flex justify-content-between">
+  <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="../../assets/logo.png" alt="Logo" height="30" routerLink="">
     </a>
-    <div class="text-right">
-      <ul class="navbar-nav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown" #navbarCollapse>
+      <ul class="navbar-nav ms-lg-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLink="games">Games</a>
+          <a class="nav-link" routerLink="games" (click)="closeDropdown()">Games</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="anime">Anime</a>
+          <a class="nav-link" routerLink="anime" (click)="closeDropdown()">Anime</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">TBD</a>
+          <a class="nav-link" href="#" (click)="closeDropdown()">TBD</a>
         </li>
       </ul>
     </div>
