@@ -13,14 +13,14 @@ export class GamesService {
     {name: 'Dyson Sphere Program', status: 'completed', playtime: 66.5},
     {name: 'Beyond: Two Souls', status: 'not_began', playtime: 10.5},
     {name: 'Chernobylite', status: 'in_progress', playtime: 14},
-    {name: 'God of War', status: 'not_began', playtime: 20.5},
+    {name: 'God of War', status: 'in_progress', playtime: 20.5},
     {name: 'GTA 3', status: 'not_began', playtime: 15},
     {name: 'GTA SA', status: 'not_began', playtime: 30.5},
     {name: 'GTA VC', status: 'not_began', playtime: 18},
     {name: 'Life is Strange 2', status: 'not_began', playtime: 16},
     {name: 'Mad Max', status: 'not_began', playtime: 20},
     {name: 'NieR: Automata', status: 'not_began', playtime: 21},
-    {name: 'Quantum Break', status: 'in_progress', playtime: 10},
+    {name: 'Quantum Break', status: 'completed', playtime: 10},
     {name: 'Spyro Trilogy', status: 'not_began', playtime: 17},
     {name: 'Above Snakes', status: 'not_began', playtime: 15},
     {name: 'Yakuza 7', status: 'not_began', playtime: 45.5},
@@ -37,7 +37,6 @@ export class GamesService {
   ]
 
   toRevisit: Game[] = [
-    {name: 'Scum'},
     {name: 'Hydroneer'},
     {name: 'Skyrim'},
     {name: 'Surgeon Simulator VR'},
