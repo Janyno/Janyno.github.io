@@ -27,9 +27,9 @@ export class GamesService {
     {name: 'Jurassic World Evolution 2', status: 'completed', playtime: 7},
     {name: 'Half Life Alyx', status: 'in_progress', playtime: 14},
     {name: 'Into the Radius', status: 'not_began'},
-    {name: 'VTOL VR', status: 'not_began'},
-    {name: 'Dragon Fist VR Kung Fu', status: 'not_began'},
-    {name: 'Contractors VR', status: 'not_began'},
+    {name: 'VTOL VR', status: 'completed'},
+    {name: 'Dragon Fist VR Kung Fu', status: 'completed'},
+    {name: 'Contractors VR', status: 'completed'},
     {name: 'Project Zomboid', status: 'not_began'},
     {name: 'Miss Neko 1', status: 'completed'},
     {name: 'Miss Neko 2', status: 'not_began'},
@@ -39,7 +39,6 @@ export class GamesService {
   toRevisit: Game[] = [
     {name: 'Hydroneer'},
     {name: 'Skyrim'},
-    {name: 'Surgeon Simulator VR'},
     {name: 'Dead by Daylight'}
   ]
 

@@ -11,3 +11,14 @@
     color: white;
     font-weight: bold;
 }
+
+@media (max-width: 767px) {
+    .list-group {
+        max-height: 250px; 
+        overflow-y: auto;
+    }
+
+    .flex-column + .flex-column {
+        margin-top: 10px;
+    }
+}
