@@ -38,7 +38,6 @@ export class GamesService {
 
   toRevisit: Game[] = [
     {name: 'Hydroneer'},
-    {name: 'Skyrim'},
     {name: 'Dead by Daylight'}
   ]
 

@@ -18,7 +18,7 @@
         overflow-y: auto;
     }
 
-    .flex-column + .flex-column {
+    .col-md:nth-child(2) {
         margin-top: 10px;
     }
 }
