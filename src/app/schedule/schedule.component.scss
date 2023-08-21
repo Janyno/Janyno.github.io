@@ -1,0 +1,12 @@
+.calendar-scroll {
+    max-height: 750px; /* Adjust the maximum height as needed */
+    overflow-y: auto;
+}
+
+::ng-deep .calendar .cal-week-view .cal-hour:not(:last-child) .cal-hour-segment  {
+    border-bottom: none;
+}
+
+::ng-deep .calendar .cal-week-view .cal-hour:last-child :not(:last-child) .cal-hour-segment {
+    border-bottom: none;
+}

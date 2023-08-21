@@ -30,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/angular-calendar/scss/angular-calendar.scss",
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "material-icons/iconfont/material-icons.css"
@@ -97,6 +98,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/angular-calendar/css/angular-calendar.css",
               "src/styles.scss"
             ],
             "scripts": []

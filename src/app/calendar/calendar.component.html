@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="calendar">
+    <div class="calendar-controls d-flex justify-content-center align-items-center mb-3">
+      <button class="btn btn-primary" (click)="goToPreviousMonth()">Previous Month</button>
+      <span class="mx-3 month">{{ viewDate | date: 'MMMM yyyy' }}</span>
+      <button class="btn btn-primary" (click)="goToNextMonth()">Next Month</button>
+    </div>
+    <mwl-calendar-month-view
+      [viewDate]="viewDate"
+      [events]="events"
+      [weekStartsOn]="1"
+      (eventClicked)="openEventModal($event.event)"
+    ></mwl-calendar-month-view>
+  </div>
+</div>
+<ng-template #eventModal let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title">{{ selectedEvent?.title }}</h5>
+    <button type="button" class="close" aria-label="Close" (click)="closeEventModal()">
+      <span aria-hidden="true">X</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>Start Time: {{ getStartTime(selectedEvent) }}</p>
+  </div>
+</ng-template>
