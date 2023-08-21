@@ -37,10 +37,34 @@ export class CalendarService {
     ]
 
     schedule: ScheduleEntry[] = [
-      {start: new Date(2023, 7, 22, 0, 0), title: 'Test', end: new Date(2023, 7, 22, 23, 59)}
+      //{start: new Date(2023, 7, 21, 0, 0), title: 'Test', end: new Date(2023, 7, 21, 23, 59)}
     ];
 
     getCalendarList() {
-        return this.gameReleases.concat(this.events as any)
+      return this.gameReleases.concat(this.events as any)
+    }
+
+    getEvents() {
+      return this.getTodayTransform(this.events)
+    }
+
+    getReleases() {
+      return this.getTodayTransform(this.gameReleases)
+    }
+
+    getTodaySchedule(): ScheduleEntry[] {
+      return this.getTodayTransform(this.schedule)
+    }
+
+    getTodayTransform(untransformedArr: any[]) {
+      const today = new Date();
+
+      const todayEntries = untransformedArr.filter(entry =>
+        entry.start.getFullYear() === today.getFullYear() &&
+        entry.start.getMonth() === today.getMonth() &&
+        entry.start.getDate() === today.getDate()
+      );
+
+      return todayEntries;
     }
 }

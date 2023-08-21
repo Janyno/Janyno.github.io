@@ -39,7 +39,7 @@
                   </div>
                 </div>
                 <span> | </span>
-                <button class="btn btn-primary w-47" (click)="highlightRandomGame()">Random</button>
+                <button class="btn btn-primary w-30" (click)="highlightRandomGame()">Random</button>
               </li>
               <li class="list-group-item d-flex align-items-center" *ngFor="let game of toPlay; let i = index" [class.highlighted]="highlightedIndex === i">
                 <i class="material-icons icon" *ngIf="game.status" [style.color]="statusColorMap[game.status]">circle</i>
