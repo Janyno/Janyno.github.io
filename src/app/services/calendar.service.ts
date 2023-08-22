@@ -29,7 +29,7 @@ export class CalendarService {
         {title: 'Like a Dragon Gaiden', start: new Date('2023-11-9'), color: { ...this.colors.blue }},
         {title: 'Call of Duty: Modern Warfare 3', start: new Date('2023-11-10'), color: { ...this.colors.blue }},
         {title: 'Avatar: Frontiers of Pandora', start: new Date('2023-12-7'), color: { ...this.colors.blue }},
-        {title: 'Cyberpunk 2077: Phantom Liberty', start: new Date('2023-9-26'), color: { ...this.colors.blue }}
+        {title: 'Cyberpunk 2077: Phantom Liberty', start: new Date('2023-9-26'), color: { ...this.colors.blue }},
       ]
 
     events: EventEntry[] = [
