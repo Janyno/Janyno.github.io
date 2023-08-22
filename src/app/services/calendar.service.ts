@@ -33,11 +33,14 @@ export class CalendarService {
       ]
 
     events: EventEntry[] = [
-        {title: 'Gamescom Opening Night', start: new Date('2023-8-22'), startTime: '19:30', color: { ...this.colors.yellow }}
+        {title: 'Gamescom Opening Night', start: new Date('2023-8-22'), startTime: '19:30', color: { ...this.colors.yellow }, link: 'https://www.youtube.com/watch?v=eqh-rDzgVwQ'},
+        {title: 'PAX West', start: new Date('2023-9-1'), end: new Date('2023-9-4') , startTime: '???', color: { ...this.colors.yellow }, link: 'https://www.twitch.tv/PAX/'},
+        {title: 'Game Awards', start: new Date('2023-12-8'), startTime: '???', color: { ...this.colors.yellow }, link: 'https://www.youtube.com/@thegameawards'}
     ]
 
     schedule: ScheduleEntry[] = [
-      //{start: new Date(2023, 7, 21, 0, 0), title: 'Test', end: new Date(2023, 7, 21, 23, 59)}
+      {start: new Date(2023, 7, 22, 0, 0), title: 'God of War', end: new Date(2023, 7, 22, 23, 59), allDay: true},
+      {start: new Date(2023, 7, 23, 0, 0), title: 'God of War', end: new Date(2023, 7, 23, 23, 59), allDay: true}
     ];
 
     getCalendarList() {

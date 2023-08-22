@@ -47,5 +47,14 @@ export class CalendarComponent {
     }
     return null;
   }
-}
+
+  getLink(event: any): string | null {
+    for (const eventEntry of this.events) {
+      if (eventEntry.title === event.title) {
+        return eventEntry.link;
+      }
+    }
+    return null;
+  }
+ }
 

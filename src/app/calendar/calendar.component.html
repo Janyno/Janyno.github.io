@@ -22,5 +22,8 @@
   </div>
   <div class="modal-body">
     <p>Start Time: {{ getStartTime(selectedEvent) }}</p>
+    <p>Link: 
+      <a target="_blank" [href]="getLink(selectedEvent)">{{getLink(selectedEvent)}}</a>
+    </p>
   </div>
 </ng-template>

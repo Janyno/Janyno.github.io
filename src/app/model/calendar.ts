@@ -6,14 +6,17 @@ export interface GameReleaseEntry {
 
 export interface EventEntry {
     start: Date,
+    end?: Date,
     title: string,
     color: any,
-    startTime: string
+    startTime: string,
+    link?: string
 }
 
 export interface ScheduleEntry {
     start: Date,
     end: Date,
-    title: string
+    title: string,
+    allDay?: boolean
 }
 
