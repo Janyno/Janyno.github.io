@@ -29,7 +29,11 @@ export class CalendarService {
         {title: 'Like a Dragon Gaiden', start: new Date('2023-11-9'), color: { ...this.colors.blue }},
         {title: 'Call of Duty: Modern Warfare 3', start: new Date('2023-11-3'), color: { ...this.colors.blue }},
         {title: 'Avatar: Frontiers of Pandora', start: new Date('2023-12-7'), color: { ...this.colors.blue }},
-        {title: 'Cyberpunk 2077: Phantom Liberty', start: new Date('2023-9-26'), color: { ...this.colors.blue }}
+        {title: 'Cyberpunk 2077: Phantom Liberty', start: new Date('2023-9-26'), color: { ...this.colors.blue }},
+        {title: 'Streets of Rouge 2', start: new Date('2024-12-31'), color: { ...this.colors.blue }},
+        {title: 'Eternights', start: new Date('2023-9-12'), color: { ...this.colors.blue }},
+        {title: 'Robocop: Rogue City', start: new Date('2023-9-31'), color: { ...this.colors.blue }},
+        {title: 'Star Trucker', start: new Date('2024-12-31'), color: { ...this.colors.blue }}
       ]
 
     events: EventEntry[] = [
@@ -40,7 +44,9 @@ export class CalendarService {
 
     schedule: ScheduleEntry[] = [
       {start: new Date(2023, 7, 22, 0, 0), title: 'God of War', end: new Date(2023, 7, 22, 23, 59), allDay: true},
-      {start: new Date(2023, 7, 23, 0, 0), title: 'God of War', end: new Date(2023, 7, 23, 23, 59), allDay: true}
+      {start: new Date(2023, 7, 23, 0, 0), title: 'God of War', end: new Date(2023, 7, 23, 23, 59), allDay: true},
+      {start: new Date(2023, 7, 24, 10, 0), title: 'Chernobylite', end: new Date(2023, 7, 24, 12, 0), allDay: false},
+      {start: new Date(2023, 7, 24, 14, 0), title: 'Outward', end: new Date(2023, 7, 24, 23, 59), allDay: false},
     ];
 
     getCalendarList() {
