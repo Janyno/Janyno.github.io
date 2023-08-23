@@ -8,12 +8,12 @@ export class GamesService {
 
   toPlay: Game[] = [
     {name: 'TRADER LIFE SIMULATOR', status: 'not_began', playtime: 3.5},
-    {name: 'Outward', status: 'not_began', playtime: 33.5},
+    {name: 'Outward', status: 'in_progress', playtime: 33.5},
     {name: 'Tales of Arise', status: 'not_began', playtime: 40.5},
     {name: 'Dyson Sphere Program', status: 'completed', playtime: 66.5},
     {name: 'Beyond: Two Souls', status: 'not_began', playtime: 10.5},
     {name: 'Chernobylite', status: 'in_progress', playtime: 14},
-    {name: 'God of War', status: 'in_progress', playtime: 20.5},
+    {name: 'God of War', status: 'completed', playtime: 20.5},
     {name: 'GTA 3', status: 'not_began', playtime: 15},
     {name: 'GTA SA', status: 'not_began', playtime: 30.5},
     {name: 'GTA VC', status: 'not_began', playtime: 18},
