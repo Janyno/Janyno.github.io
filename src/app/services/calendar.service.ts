@@ -46,7 +46,7 @@ export class CalendarService {
       {start: new Date(2023, 7, 22, 0, 0), title: 'God of War', end: new Date(2023, 7, 22, 23, 59), allDay: true},
       {start: new Date(2023, 7, 23, 0, 0), title: 'God of War', end: new Date(2023, 7, 23, 23, 59), allDay: true},
       {start: new Date(2023, 7, 24, 10, 0), title: 'Chernobylite', end: new Date(2023, 7, 24, 12, 0), allDay: false},
-      {start: new Date(2023, 7, 24, 14, 0), title: 'Outward', end: new Date(2023, 7, 24, 23, 59), allDay: false},
+      {start: new Date(2023, 7, 24, 14, 0), title: 'Outward', end: new Date(2023, 7, 24, 23, 59), allDay: false}
     ];
 
     getCalendarList() {
