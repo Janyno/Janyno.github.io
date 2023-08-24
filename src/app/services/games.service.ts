@@ -14,7 +14,7 @@ export class GamesService {
     {name: 'Beyond: Two Souls', status: 'not_began', playtime: 10.5},
     {name: 'Chernobylite', status: 'completed', playtime: 14},
     {name: 'God of War', status: 'completed', playtime: 20.5},
-    {name: 'GTA 3', status: 'in_progress', playtime: 15},
+    {name: 'GTA 3', status: 'not_began', playtime: 15},
     {name: 'GTA SA', status: 'not_began', playtime: 30.5},
     {name: 'GTA VC', status: 'not_began', playtime: 18},
     {name: 'Life is Strange 2', status: 'not_began', playtime: 16},
@@ -37,7 +37,9 @@ export class GamesService {
   ]
 
   toRevisit: Game[] = [
-    {name: 'Dead by Daylight'}
+    {name: 'Dead by Daylight'},
+    {name: 'Hypixel Skyblock'},
+    {name: 'Wynncraft'}
   ]
 
   getGames() {

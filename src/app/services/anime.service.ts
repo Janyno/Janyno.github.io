@@ -78,7 +78,9 @@ export class AnimeService {
     {name: 'Black Bullet', status: 'completed'},
     {name: 'Redo of Healer', status: 'completed'},
     {name: 'Seton Academy: Join the Pack!', status: 'aborted'},
-    {name: 'Oshi no Ko', status: 'wait_new_sep'}
+    {name: 'Oshi no Ko', status: 'wait_new_sep'},
+    {name: 'Akame ga Kill', status: 'completed'},
+    {name: 'One Piece', status: 'on_pause_maybe'}
   ]
 
   getAnime() {
