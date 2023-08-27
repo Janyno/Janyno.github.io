@@ -7,7 +7,7 @@ import { Game } from '../model/game';
 export class GamesService {
 
   toPlay: Game[] = [
-    {name: 'TRADER LIFE SIMULATOR', status: 'not_began', playtime: 3.5},
+    {name: 'TRADER LIFE SIMULATOR', status: 'completed', playtime: 3.5},
     {name: 'Outward', status: 'completed', playtime: 33.5},
     {name: 'Tales of Arise', status: 'not_began', playtime: 40.5},
     {name: 'Dyson Sphere Program', status: 'completed', playtime: 66.5},
