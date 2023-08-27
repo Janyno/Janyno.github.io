@@ -17,6 +17,7 @@ export interface ScheduleEntry {
     start: Date,
     end: Date,
     title: string,
-    allDay?: boolean
+    allDay?: boolean,
+    color?: any
 }
 

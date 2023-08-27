@@ -10,3 +10,13 @@
 ::ng-deep .calendar .cal-week-view .cal-hour:last-child :not(:last-child) .cal-hour-segment {
     border-bottom: none;
 }
+
+::ng-deep .calendar .cal-week-view .cal-event {
+    background-color: lavenderblush;
+    border-color: darkgray;
+
+    span {
+        color: black !important;
+        font-weight: bold;
+    }
+}

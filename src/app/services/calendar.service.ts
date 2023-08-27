@@ -13,9 +13,21 @@ export class CalendarService {
           primary: '#1e90ff'
         },
         yellow: {
-          primary: '#e3bc08'
+          primary: '#e3bc08',
         },
       };
+
+    colorsBg: any = {
+      loving: {
+        secondary: 'hotpink'
+      },
+      space: {
+        secondary: '#3a7a8f'
+      },
+      deserty: {
+        secondary: 'yellow'
+      }
+    }
 
     gameReleases: GameReleaseEntry[] = [
         {title: 'Starfield', start: new Date('2023-9-01'), color: { ...this.colors.blue }},
@@ -46,7 +58,12 @@ export class CalendarService {
       {start: new Date(2023, 7, 22, 0, 0), title: 'God of War', end: new Date(2023, 7, 22, 23, 59), allDay: true},
       {start: new Date(2023, 7, 23, 0, 0), title: 'God of War', end: new Date(2023, 7, 23, 23, 59), allDay: true},
       {start: new Date(2023, 7, 24, 10, 0), title: 'Chernobylite', end: new Date(2023, 7, 24, 12, 0), allDay: false},
-      {start: new Date(2023, 7, 24, 14, 0), title: 'Outward', end: new Date(2023, 7, 24, 23, 59), allDay: false}
+      {start: new Date(2023, 7, 24, 14, 0), title: 'Outward', end: new Date(2023, 7, 24, 23, 59), allDay: false},
+      {start: new Date(2023, 7, 28, 17, 0), title: 'Huniepop 2', end: new Date(2023, 7, 28, 22, 0), allDay: false, color: {...this.colorsBg.loving}},
+      {start: new Date(2023, 7, 29, 16, 0), title: 'Mad Max', end: new Date(2023, 7, 29, 22, 0), allDay: false, color: { ...this.colorsBg.deserty}},
+      {start: new Date(2023, 7, 30, 18, 30), title: 'Huniepop 2', end: new Date(2023, 7, 30, 22, 0), allDay: false, color: { ...this.colorsBg.loving}},
+      {start: new Date(2023, 7, 31, 16, 0), title: 'Mad Max', end: new Date(2023, 7, 31, 22, 0), allDay: false, color: { ...this.colorsBg.deserty}},
+      {start: new Date(2023, 8, 1, 16, 0), title: 'Starfield', end: new Date(2023, 8, 10, 23, 59), allDay: false, color: {...this.colorsBg.space}}
     ];
 
     getCalendarList() {
