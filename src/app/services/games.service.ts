@@ -22,7 +22,7 @@ export class GamesService {
     {name: 'NieR: Automata', status: 'not_began', playtime: 21},
     {name: 'Quantum Break', status: 'completed', playtime: 10},
     {name: 'Spyro Trilogy', status: 'not_began', playtime: 17},
-    {name: 'Above Snakes', status: 'not_began', playtime: 15},
+    {name: 'Above Snakes', status: 'completed', playtime: 15},
     {name: 'Yakuza 7', status: 'not_began', playtime: 45.5},
     {name: 'Jurassic World Evolution 2', status: 'completed', playtime: 7},
     {name: 'Half Life Alyx', status: 'in_progress', playtime: 14},
@@ -32,8 +32,9 @@ export class GamesService {
     {name: 'Contractors VR', status: 'completed'},
     {name: 'Project Zomboid', status: 'not_began'},
     {name: 'Miss Neko 1', status: 'completed'},
-    {name: 'Miss Neko 2', status: 'not_began'},
-    {name: 'HuniePop 2', status: 'not_began'}
+    {name: 'Miss Neko 2', status: 'completed'},
+    {name: 'HuniePop 2', status: 'in_progress', playtime: 13},
+    {name: 'Labyrinthine', status: 'in_progress', playtime: 5}
   ]
 
   toRevisit: Game[] = [

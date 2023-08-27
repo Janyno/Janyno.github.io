@@ -39,7 +39,7 @@
               </div>
             </li>
             <li class="list-group-item d-flex align-items-center bg-dark" *ngFor="let anime of animeList; let i = index">
-              <i class="material-icons icon" *ngIf="anime.status" [style.color]="statusColorMap[anime.status]">circle</i>
+              <i class="material-icons icon me-2" *ngIf="anime.status" [style.color]="statusColorMap[anime.status]">circle</i>
               <span class="flex-grow-1">{{ anime.name }}</span>
             </li>
           </ul>
