@@ -33,7 +33,7 @@ export class GamesService {
     {name: 'Project Zomboid', status: 'not_began'},
     {name: 'Miss Neko 1', status: 'completed'},
     {name: 'Miss Neko 2', status: 'completed'},
-    {name: 'HuniePop 2', status: 'in_progress', playtime: 13},
+    {name: 'HuniePop 2', status: 'completed', playtime: 13},
     {name: 'Labyrinthine', status: 'in_progress', playtime: 5}
   ]
 

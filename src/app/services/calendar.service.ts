@@ -61,8 +61,8 @@ export class CalendarService {
       {start: new Date(2023, 7, 24, 14, 0), title: 'Outward', end: new Date(2023, 7, 24, 23, 59), allDay: false},
       {start: new Date(2023, 7, 28, 17, 0), title: 'Huniepop 2', end: new Date(2023, 7, 28, 22, 0), allDay: false, color: {...this.colorsBg.loving}},
       {start: new Date(2023, 7, 29, 16, 0), title: 'Mad Max', end: new Date(2023, 7, 29, 22, 0), allDay: false, color: { ...this.colorsBg.deserty}},
-      {start: new Date(2023, 7, 30, 18, 30), title: 'Huniepop 2', end: new Date(2023, 7, 30, 22, 0), allDay: false, color: { ...this.colorsBg.loving}},
-      {start: new Date(2023, 7, 31, 16, 0), title: 'Mad Max', end: new Date(2023, 7, 31, 22, 0), allDay: false, color: { ...this.colorsBg.deserty}},
+      {start: new Date(2023, 7, 30, 18, 30), title: 'Mad Max', end: new Date(2023, 7, 30, 22, 0), allDay: false, color: { ...this.colorsBg.deserty}},
+      {start: new Date(2023, 7, 31, 16, 15), title: 'Mad Max', end: new Date(2023, 7, 31, 22, 0), allDay: false, color: { ...this.colorsBg.deserty}},
       {start: new Date(2023, 8, 1, 16, 0), title: 'Starfield', end: new Date(2023, 8, 10, 23, 59), allDay: false, color: {...this.colorsBg.space}}
     ];
 
