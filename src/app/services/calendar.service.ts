@@ -26,6 +26,9 @@ export class CalendarService {
       },
       deserty: {
         secondary: 'yellow'
+      },
+      greenish: {
+        secondary: '#28b99d'
       }
     }
 
@@ -84,13 +87,22 @@ export class CalendarService {
 
     getTodayTransform(untransformedArr: any[]) {
       const today = new Date();
-
-      const todayEntries = untransformedArr.filter(entry =>
-        entry.start.getFullYear() === today.getFullYear() &&
-        entry.start.getMonth() === today.getMonth() &&
-        entry.start.getDate() === today.getDate()
-      );
-
+      let todayEntries = [];
+    
+      todayEntries = untransformedArr.filter(entry => {
+        const entryStartDate = entry.start;
+        const entryEndDate = entry.end; // Assuming you have an end date for the entry
+        
+        // Check if the entry's start date is today or if the date range includes today
+        const isEntryToday =
+          (entryStartDate <= today && today <= entryEndDate) ||
+          (entryStartDate.getDate() === today.getDate() &&
+            entryStartDate.getMonth() === today.getMonth() &&
+            entryStartDate.getFullYear() === today.getFullYear());
+    
+        return isEntryToday;
+      });
+    
       return todayEntries;
     }
 }
