@@ -80,7 +80,8 @@ export class AnimeService {
     {name: 'Seton Academy: Join the Pack!', status: 'aborted'},
     {name: 'Oshi no Ko', status: 'wait_new_sep'},
     {name: 'Akame ga Kill', status: 'completed'},
-    {name: 'One Piece', status: 'on_pause_maybe'}
+    {name: 'One Piece', status: 'on_pause_maybe'},
+    {name: 'TENGOKU-DAIMAKYO', status: 'watching'}
   ]
 
   getAnime() {

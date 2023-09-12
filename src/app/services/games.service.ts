@@ -24,7 +24,8 @@ export class GamesService {
   toRevisit: Game[] = [
     {name: 'Dead by Daylight'},
     {name: 'Hypixel Skyblock'},
-    {name: 'Wynncraft'}
+    {name: 'Wynncraft'},
+    {name: 'Spiderman Remastered'}
   ]
 
   getGames() {
