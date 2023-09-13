@@ -32,8 +32,11 @@ export class GameCompletionListComponent {
 
   highlightRandomGame() {
     if (this.toPlay.length > 0) {
-      const randomIndex = Math.floor(Math.random() * this.toPlay.length);
-
+      let randomIndex;
+      do {
+        randomIndex = Math.floor(Math.random() * this.toPlay.length);
+      } while (randomIndex === this.highlightedIndex);
+    
       this.highlightedIndex = randomIndex;
     }
   }
