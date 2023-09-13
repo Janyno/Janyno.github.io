@@ -44,10 +44,11 @@
               <li class="list-group-item d-flex align-items-center" *ngFor="let game of toPlay; let i = index" [class.highlighted]="highlightedIndex === i">
                 <i class="material-icons icon me-2" *ngIf="game.status" [style.color]="statusColorMap[game.status]">circle</i>
                 <span class="flex-grow-1">{{ game.name }}</span>
-                <span class="text-end" *ngIf="game.playtime; else noPlaytime">{{ game.playtime }} Hrs.</span>
-                <ng-template #noPlaytime>
-                  <span class="text-end">??? Hrs.</span>
-                </ng-template>
+                <div [ngSwitch]="game.playtime">
+                  <ng-container *ngSwitchCase="9999">&infin; Hrs.</ng-container>
+                  <ng-container *ngSwitchCase="-1">??? Hrs.</ng-container>
+                  <ng-container *ngSwitchDefault>{{ game.playtime }} Hrs.</ng-container>
+                </div>
               </li>
             </ul>
           </div>
@@ -63,8 +64,14 @@
         <div class="card-body flex-fill">
           <div class="list-container">
             <ul class="list-group">
-              <li class="list-group-item" *ngFor="let game of toRevisit">
-                {{ game.name }}
+              <li class="list-group-item d-flex align-items-center" *ngFor="let game of toRevisit">
+                <i class="material-icons icon me-2" *ngIf="game.status" [style.color]="statusColorMap[game.status]">circle</i>
+                <span class="flex-grow-1">{{ game.name }}</span>
+                <div [ngSwitch]="game.playtime">
+                  <ng-container *ngSwitchCase="9999">&infin; Hrs.</ng-container>
+                  <ng-container *ngSwitchCase="-1">??? Hrs.</ng-container>
+                  <ng-container *ngSwitchDefault>{{ game.playtime }} Hrs.</ng-container>
+                </div>
               </li>
             </ul>
           </div>

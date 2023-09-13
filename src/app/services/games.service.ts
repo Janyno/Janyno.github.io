@@ -13,19 +13,19 @@ export class GamesService {
     {name: 'GTA SA', status: 'not_began', playtime: 30.5},
     {name: 'GTA VC', status: 'not_began', playtime: 18},
     {name: 'Life is Strange 2', status: 'not_began', playtime: 16},
-    {name: 'Spyro Trilogy', status: 'in_progress', playtime: 17},
+    {name: 'Spyro Trilogy', status: 'not_began', playtime: 17},
     {name: 'Yakuza 7', status: 'not_began', playtime: 45.5},
     {name: 'Half Life Alyx', status: 'in_progress', playtime: 14},
-    {name: 'Into the Radius', status: 'not_began'},
-    {name: 'Project Zomboid', status: 'not_began'},
+    {name: 'Into the Radius', status: 'not_began', playtime: -1},
+    {name: 'Project Zomboid', status: 'not_began', playtime: 9999},
     {name: 'Labyrinthine', status: 'in_progress', playtime: 5}
   ]
 
   toRevisit: Game[] = [
-    {name: 'Dead by Daylight'},
-    {name: 'Hypixel Skyblock'},
-    {name: 'Wynncraft'},
-    {name: 'Spiderman Remastered'}
+    {name: 'Dead by Daylight', status: 'not_began', playtime: 9999},
+    {name: 'Hypixel Skyblock', status: 'not_began', playtime: 9999},
+    {name: 'Wynncraft', status: 'not_began', playtime: 9999},
+    {name: 'Spiderman Remastered', status: 'not_began', playtime: 17}
   ]
 
   getGames() {
