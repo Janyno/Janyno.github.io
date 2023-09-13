@@ -1,0 +1,14 @@
+:host {
+    ::ng-deep .sort {
+        border-radius: 300px;
+        background-color: transparent;
+        border-color: transparent;
+        padding: 0;
+        margin-right: 10px;
+
+        &:active {
+            background-color: transparent;
+            border-color: transparent;
+        }
+    }
+}

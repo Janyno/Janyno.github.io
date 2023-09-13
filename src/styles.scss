@@ -72,6 +72,7 @@ $semi-trans-background: rgba(113, 111, 111, 0.4);
   overflow-y: auto;
   scrollbar-color: darkgrey slategrey;
   scrollbar-width: thin;
+  min-height: 21vh;
 }
 
 /* Custom scrollbar styles */
@@ -90,6 +91,21 @@ $semi-trans-background: rgba(113, 111, 111, 0.4);
 
 .list-container::-webkit-scrollbar-track {
   background-color: slategrey;
+}
+
+button.dropdown-item:active {
+  background-color: #562a8b !important;
+}
+
+.btn-primary, .dropdown-item.active {
+  &:not(.sort) {
+    background-color: #562a8b !important;
+    border-color: #6b36ac !important;
+
+    &:hover, &:active, &:visited, &:active, .dropdown-item:active {
+      background-color: #4e1b8d !important;
+    }
+  }
 }
 
 /* Text Color */
