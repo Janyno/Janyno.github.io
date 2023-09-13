@@ -8,8 +8,8 @@ export class GamesService {
 
   toPlay: Game[] = [
     {name: 'Tales of Arise', status: 'not_began', playtime: 40.5},
-    {name: 'Beyond: Two Souls', status: 'not_began', playtime: 10.5},
-    {name: 'GTA 3', status: 'not_began', playtime: 15},
+    {name: 'Beyond: Two Souls', status: 'in_progress', playtime: 10.5},
+    {name: 'GTA 3', status: 'in_progress', playtime: 15},
     {name: 'GTA SA', status: 'not_began', playtime: 30.5},
     {name: 'GTA VC', status: 'not_began', playtime: 18},
     {name: 'Life is Strange 2', status: 'not_began', playtime: 16},

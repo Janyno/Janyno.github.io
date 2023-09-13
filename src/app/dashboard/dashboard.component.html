@@ -9,6 +9,9 @@
               <h6>{{ event.title }}</h6>
               <p>{{ event.start | date:'shortTime':'':'de' }} - {{ event.end | date:'shortTime':'':'de' }}</p>
             </li>
+            <li class="list-group-item" *ngIf="todaySchedule.length === 0">
+              <h6>No schedule for today.</h6>
+            </li>
           </ul>
         </div>
       </div>
