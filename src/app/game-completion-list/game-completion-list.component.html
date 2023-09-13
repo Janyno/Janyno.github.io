@@ -15,7 +15,7 @@
                     <span *ngIf="sortingDirection === 'desc'">▼</span>
                   </button>
                 </div>
-                <div ngbDropdown class="d-inline-block">
+                <div ngbDropdown class="d-inline-block dropdown">
                   <button class="btn btn-primary dropdown-toggle" id="filterDropdown" ngbDropdownToggle>
                     {{ selectedFilter ? selectedFilter : 'Show All' }}
                   </button>
@@ -38,7 +38,6 @@
                     </button>
                   </div>
                 </div>
-                <span> | </span>
                 <button class="btn btn-primary w-30" (click)="highlightRandomGame()">Random</button>
               </li>
               <li class="list-group-item d-flex align-items-center" *ngFor="let game of toPlay; let i = index" [class.highlighted]="highlightedIndex === i">
