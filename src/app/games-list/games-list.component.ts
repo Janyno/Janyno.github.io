@@ -7,7 +7,7 @@ import { GamesService } from '../services/games.service';
   templateUrl: './games-list.component.html',
   styleUrls: ['./games-list.component.scss']
 })
-export class GameCompletionListComponent {
+export class GamesListComponent {
   toPlay: Game[]
   toRevisit: Game[]
   gameList: Game[] = []
