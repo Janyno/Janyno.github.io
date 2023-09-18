@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { APP_ROUTES } from './misc/app.routing';
 import { HeaderComponent } from './header/header.component';
-import { GameCompletionListComponent } from './game-completion-list/game-completion-list.component';
+import { GameCompletionListComponent } from './games-list/games-list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StatusPipe } from './misc/status.pipe';

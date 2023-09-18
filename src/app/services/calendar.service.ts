@@ -39,7 +39,6 @@ export class CalendarService {
         {title: 'Cities Skylines 2', start: new Date('2023-10-24'), color: { ...this.colors.blue }},
         {title: 'Assassins Creed Mirage', start: new Date('2023-10-5'), color: { ...this.colors.blue }},
         {title: 'The Crew Motorfest', start: new Date('2023-9-14'), color: { ...this.colors.blue }},
-        {title: 'The Lords of the Fallen', start: new Date('2023-10-13'), color: { ...this.colors.blue }},
         {title: 'Alan Wake 2', start: new Date('2023-10-27'), color: { ...this.colors.blue }},
         {title: 'Like a Dragon Gaiden', start: new Date('2023-11-9'), color: { ...this.colors.blue }},
         {title: 'Call of Duty: Modern Warfare 3', start: new Date('2023-11-3'), color: { ...this.colors.blue }},
@@ -47,7 +46,7 @@ export class CalendarService {
         {title: 'Cyberpunk 2077: Phantom Liberty', start: new Date('2023-9-26'), color: { ...this.colors.blue }},
         {title: 'Streets of Rouge 2', start: new Date('2024-12-31'), color: { ...this.colors.blue }},
         {title: 'Eternights', start: new Date('2023-9-12'), color: { ...this.colors.blue }},
-        {title: 'Robocop: Rogue City', start: new Date('2023-9-31'), color: { ...this.colors.blue }},
+        {title: 'Robocop: Rogue City', start: new Date('2023-10-2'), color: { ...this.colors.blue }},
         {title: 'Star Trucker', start: new Date('2024-12-31'), color: { ...this.colors.blue }}
       ]
 

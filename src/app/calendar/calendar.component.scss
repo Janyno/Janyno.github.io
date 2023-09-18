@@ -2,3 +2,7 @@
     color: rgb(255 255 255) !important;
     font-weight: bold;
 }
+
+::ng-deep .cal-month-view .cal-day-badge {
+    display: none;
+}

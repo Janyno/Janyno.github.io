@@ -3,9 +3,9 @@ import { Game } from '../model/game';
 import { GamesService } from '../services/games.service';
 
 @Component({
-  selector: 'app-game-completion-list',
-  templateUrl: './game-completion-list.component.html',
-  styleUrls: ['./game-completion-list.component.scss']
+  selector: 'app-games-list',
+  templateUrl: './games-list.component.html',
+  styleUrls: ['./games-list.component.scss']
 })
 export class GameCompletionListComponent {
   toPlay: Game[]
@@ -22,6 +22,8 @@ export class GameCompletionListComponent {
     this.toPlay = games.toPlay
     this.toRevisit = games.toRevisit
     this.gameList = this.toPlay
+
+    this.sortToPlay()
   }
 
   statusColorMap: { [status: string]: string } = {

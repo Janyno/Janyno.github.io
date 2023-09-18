@@ -1,5 +1,5 @@
 import { Routes } from "@angular/router";
-import { GameCompletionListComponent } from "../game-completion-list/game-completion-list.component";
+import { GameCompletionListComponent } from "../games-list/games-list.component";
 import { DashboardComponent } from "../dashboard/dashboard.component";
 import { AnimeListComponent } from "../anime-list/anime-list.component";
 import { CalendarComponent } from "../calendar/calendar.component";
