@@ -29,6 +29,9 @@ export class CalendarService {
       },
       greenish: {
         secondary: '#28b99d'
+      },
+      purply: {
+        secondary: '#a93da9'
       }
     }
 
@@ -66,7 +69,9 @@ export class CalendarService {
       {start: new Date(2023, 7, 29, 16, 0), title: 'Mad Max', end: new Date(2023, 7, 29, 22, 0), allDay: false, color: { ...this.colorsBg.deserty}},
       {start: new Date(2023, 7, 30, 18, 30), title: 'Mad Max', end: new Date(2023, 7, 30, 22, 0), allDay: false, color: { ...this.colorsBg.deserty}},
       {start: new Date(2023, 7, 31, 16, 15), title: 'Mad Max', end: new Date(2023, 7, 31, 22, 0), allDay: false, color: { ...this.colorsBg.deserty}},
-      {start: new Date(2023, 8, 1, 16, 0), title: 'Starfield', end: new Date(2023, 8, 10, 23, 59), allDay: false, color: {...this.colorsBg.space}}
+      {start: new Date(2023, 8, 10, 16, 0), title: 'Starfield', end: new Date(2023, 8, 10, 23, 59), allDay: false, color: {...this.colorsBg.space}},
+      {start: new Date(2023, 8, 29, 16, 0), title: 'Cyberpunk 2077: Phantom Liberty', end: new Date(2023, 8, 30, 23, 59), allDay: false, color: {...this.colorsBg.deserty}},
+      {start: new Date(2023, 9, 1, 0, 0), title: 'Spyro', end: new Date(2023, 9, 1, 23, 59), color: {...this.colorsBg.purply}},
     ];
 
     getCalendarList() {

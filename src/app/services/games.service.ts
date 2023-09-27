@@ -8,7 +8,7 @@ export class GamesService {
 
   toPlay: Game[] = [
     {name: 'Tales of Arise', status: 'not_began', playtime: 40.5},
-    {name: 'GTA 3', status: 'in_progress', playtime: 15},
+    {name: 'GTA 3', status: 'not_began', playtime: 15},
     {name: 'GTA SA', status: 'not_began', playtime: 30.5},
     {name: 'GTA VC', status: 'not_began', playtime: 18},
     {name: 'Life is Strange 2', status: 'not_began', playtime: 16},
@@ -17,14 +17,14 @@ export class GamesService {
     {name: 'Half Life Alyx', status: 'in_progress', playtime: 14},
     {name: 'Into the Radius', status: 'not_began', playtime: -1},
     {name: 'Project Zomboid', status: 'not_began', playtime: 9999},
-    {name: 'Labyrinthine', status: 'in_progress', playtime: 5}
+    {name: 'Labyrinthine', status: 'in_progress', playtime: 5},
+    {name: 'Spiderman Remastered', status: 'not_began', playtime: 17}
   ]
 
   toRevisit: Game[] = [
-    {name: 'Dead by Daylight', status: 'not_began', playtime: 9999},
+    {name: 'Dead by Daylight', status: 'in_progress', playtime: 9999},
     {name: 'Hypixel Skyblock', status: 'not_began', playtime: 9999},
-    {name: 'Wynncraft', status: 'not_began', playtime: 9999},
-    {name: 'Spiderman Remastered', status: 'not_began', playtime: 17}
+    {name: 'Wynncraft', status: 'not_began', playtime: 9999}
   ]
 
   getGames() {

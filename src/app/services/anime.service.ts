@@ -7,7 +7,7 @@ import { Anime } from '../model/anime';
 export class AnimeService {
 
   animeList: Anime[] = [
-    {name: 'Mushoku Tensei: Jobless Reincarnation', status: 'watching'},
+    {name: 'Mushoku Tensei: Jobless Reincarnation', status: 'wait_new_sep'},
     {name: 'Demon Slayer', status: 'wait_new_sep'},
     {name: 'Jujutsu Kaisen', status: 'watching'},
     {name: 'Hell´s Paradise', status: 'wait_new_sep'},
@@ -15,9 +15,9 @@ export class AnimeService {
     {name: 'Dr. STONE', status: 'wait_new_sep'},
     {name: 'Dead Mount Death Play', status: 'wait_new_sep'},
     {name: 'Baki', status: 'completed'},
-    {name: 'Baki Hanma: Son of Ogre', status: 'watch_new_season'},
+    {name: 'Baki Hanma: Son of Ogre', status: 'watching'},
     {name: 'Zom 100: Bucket List of the Dead', status: 'watching'},
-    {name: 'Bungo Stray Dogs', status: 'watching'},
+    {name: 'Bungo Stray Dogs', status: 'wait_new_sep'},
     {name: 'Golden Kamuy', status: 'on_pause_maybe'},
     {name: 'Black Clover', status: 'wait_new_sep'},
     {name: 'Naruto Shippuden', status: 'completed'},
