@@ -49,7 +49,7 @@ export class CalendarService {
         {title: 'Cyberpunk 2077: Phantom Liberty', start: new Date('2023-9-26'), color: { ...this.colors.blue }},
         {title: 'Streets of Rouge 2', start: new Date('2024-12-31'), color: { ...this.colors.blue }},
         {title: 'Eternights', start: new Date('2023-9-12'), color: { ...this.colors.blue }},
-        {title: 'Robocop: Rogue City', start: new Date('2023-10-2'), color: { ...this.colors.blue }},
+        {title: 'Robocop: Rogue City', start: new Date('2023-11-2'), color: { ...this.colors.blue }},
         {title: 'Star Trucker', start: new Date('2024-12-31'), color: { ...this.colors.blue }}
       ]
 
