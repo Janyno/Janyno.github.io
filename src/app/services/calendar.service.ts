@@ -61,17 +61,10 @@ export class CalendarService {
     ]
 
     schedule: ScheduleEntry[] = [
-      {start: new Date(2023, 7, 22, 0, 0), title: 'God of War', end: new Date(2023, 7, 22, 23, 59), allDay: true},
-      {start: new Date(2023, 7, 23, 0, 0), title: 'God of War', end: new Date(2023, 7, 23, 23, 59), allDay: true},
-      {start: new Date(2023, 7, 24, 10, 0), title: 'Chernobylite', end: new Date(2023, 7, 24, 12, 0), allDay: false},
-      {start: new Date(2023, 7, 24, 14, 0), title: 'Outward', end: new Date(2023, 7, 24, 23, 59), allDay: false},
-      {start: new Date(2023, 7, 28, 17, 0), title: 'Huniepop 2', end: new Date(2023, 7, 28, 22, 0), allDay: false, color: {...this.colorsBg.loving}},
-      {start: new Date(2023, 7, 29, 16, 0), title: 'Mad Max', end: new Date(2023, 7, 29, 22, 0), allDay: false, color: { ...this.colorsBg.deserty}},
-      {start: new Date(2023, 7, 30, 18, 30), title: 'Mad Max', end: new Date(2023, 7, 30, 22, 0), allDay: false, color: { ...this.colorsBg.deserty}},
-      {start: new Date(2023, 7, 31, 16, 15), title: 'Mad Max', end: new Date(2023, 7, 31, 22, 0), allDay: false, color: { ...this.colorsBg.deserty}},
-      {start: new Date(2023, 8, 10, 16, 0), title: 'Starfield', end: new Date(2023, 8, 10, 23, 59), allDay: false, color: {...this.colorsBg.space}},
-      {start: new Date(2023, 8, 29, 16, 0), title: 'Cyberpunk 2077: Phantom Liberty', end: new Date(2023, 8, 30, 23, 59), allDay: false, color: {...this.colorsBg.deserty}},
-      {start: new Date(2023, 9, 1, 0, 0), title: 'Spyro', end: new Date(2023, 9, 1, 23, 59), color: {...this.colorsBg.purply}},
+      {start: this.transformDateForSchedule([4, 10, 2023], [16, 0]), title: 'MONKEY GAMEEEEEE', end: this.transformDateForSchedule([4, 10, 2023], [22, 0]), color: this.getColor('saddlebrown')},
+      {start: this.transformDateForSchedule([5, 10, 2023], [16, 30]), title: 'VR Day', end: this.transformDateForSchedule([5, 10, 2023], [22, 0]), color: this.getColor('plum')},
+      {start: this.transformDateForSchedule([6, 10, 2023], [15, 0]), title: 'GTA Weekend', end: this.transformDateForSchedule([8, 10, 2023], [22, 0]), color: this.getColor('indianred')},
+      {start: this.transformDateForSchedule([9, 10, 2023], [16, 0]), title: 'MONKEY GAMEEEEEE', end: this.transformDateForSchedule([9, 10, 2023], [22, 0]), color: this.getColor('saddlebrown')},
     ];
 
     getCalendarList() {
@@ -82,8 +75,18 @@ export class CalendarService {
       return this.getTodayTransform(this.events)
     }
 
+    getColor(color: string) {
+      return {
+        secondary: color
+      }
+    }
+
     getReleases() {
       return this.getTodayTransform(this.gameReleases)
+    }
+
+    transformDateForSchedule(date: number[], time: number[]) {
+      return new Date(date[2], date[1] - 1, date[0], time[0], time[1])
     }
 
     getTodaySchedule(): ScheduleEntry[] {
