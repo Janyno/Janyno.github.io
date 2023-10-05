@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Anime } from '../model/anime';
 import { AnimeService } from '../services/anime.service';
 
@@ -7,16 +7,20 @@ import { AnimeService } from '../services/anime.service';
   templateUrl: './anime-list.component.html',
   styleUrls: ['./anime-list.component.scss']
 })
-export class AnimeListComponent {
-  animeList: Anime[]
+export class AnimeListComponent implements OnInit {
+  animeList: Anime[] = []
   animeListBackup: Anime[] = []
   sortingDirection: 'asc' | 'desc' = 'asc'
   availableStatuses: string[] = ['aborted', 'watching', 'wait_new_sep', 'on_pause_maybe', 'watch_new_season', 'completed'];
   selectedFilter: string | null = null;
 
-  constructor(private animeService: AnimeService) {
-    this.animeList = this.animeService.getAnime()
-    this.animeListBackup = this.animeList
+  constructor(private animeService: AnimeService) {}
+
+  ngOnInit(): void {
+    this.animeService.getData().subscribe(data => {
+      this.animeList = data
+      this.animeListBackup = data
+    })
     this.sortAnime()
   }
 
