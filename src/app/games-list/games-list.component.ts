@@ -7,23 +7,26 @@ import { GamesService } from '../services/games.service';
   templateUrl: './games-list.component.html',
   styleUrls: ['./games-list.component.scss']
 })
-export class GamesListComponent {
-  toPlay: Game[]
-  toRevisit: Game[]
+export class GamesListComponent implements OnInit {
+  toPlay: Game[] = []
+  toRevisit: Game[] = []
   gameList: Game[] = []
   highlightedIndex: number | null = null
   sortingDirection: 'asc' | 'desc' = 'asc'
   availableStatuses: string[] = ['not_began', 'in_progress', 'completed'];
   selectedFilter: string | null = null;
 
-  constructor(private gamesService: GamesService) {
-    const games = this.gamesService.getGames()
+  constructor(private gamesService: GamesService) {}
 
-    this.toPlay = games.toPlay
-    this.toRevisit = games.toRevisit
+  ngOnInit(): void {
+    this.gamesService.getData().subscribe(data => {
+      this.toPlay = data.toPlay
+      this.toRevisit = data.toRevisit
+    })
+
     this.gameList = this.toPlay
 
-    this.sortToPlay()
+    this.sortToPlay() 
   }
 
   statusColorMap: { [status: string]: string } = {

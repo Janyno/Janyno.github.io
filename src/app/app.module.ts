@@ -17,6 +17,7 @@ import { CalendarDateFormatter, CalendarModule, CalendarWeekModule, DateAdapter 
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { CustomDateFormatter } from './misc/CustomDateFormatter';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { CustomDateFormatter } from './misc/CustomDateFormatter';
   imports: [
     BrowserModule,
     RouterOutlet,
-    [RouterModule.forRoot(APP_ROUTES),
+    [RouterModule.forRoot(APP_ROUTES)],
     NgbModule,
     CalendarModule.forRoot({
       provide: DateAdapter,
@@ -44,8 +45,8 @@ import { CustomDateFormatter } from './misc/CustomDateFormatter';
         useClass: CustomDateFormatter
       }
     }),
-    CalendarWeekModule
-  ]
+    CalendarWeekModule,
+    HttpClientModule
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent]

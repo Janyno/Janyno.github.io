@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GamesService } from '../services/games.service';
 import { DashboardData } from '../model/dashboardData';
 import { AnimeService } from '../services/anime.service';
@@ -10,14 +10,26 @@ import { CalendarService } from '../services/calendar.service';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
-export class DashboardComponent {
-  data: DashboardData
-  events: EventEntry[]
-  releases: GameReleaseEntry[]
-  todaySchedule: ScheduleEntry[]
+export class DashboardComponent implements OnInit {
+  data: DashboardData = {
+    gameData: {
+      toPlayAmount: 0,
+      toRevisitAmount: 0
+    },
+    animeAmount: 0
+  }
+  events: EventEntry[] = []
+  releases: GameReleaseEntry[] = []
+  todaySchedule: ScheduleEntry[] = []
 
-  constructor(private gamesService: GamesService, private animeService: AnimeService, private calendarService: CalendarService) {
-    this.data = {gameData: this.gamesService.getGameData(), animeAmount: this.animeService.getAnimeData()}
+  constructor(private gamesService: GamesService, private animeService: AnimeService, private calendarService: CalendarService) {}
+
+  ngOnInit(): void {
+    this.gamesService.getData().subscribe(gameData => {
+      this.data.gameData.toPlayAmount = gameData.toPlay.length
+      this.data.gameData.toRevisitAmount = gameData.toRevisit.length
+    }) 
+    this.data.animeAmount = this.animeService.getAnimeData()
     this.events = this.calendarService.getEvents()
     this.releases = this.calendarService.getReleases()
     this.todaySchedule = this.calendarService.getTodaySchedule()
