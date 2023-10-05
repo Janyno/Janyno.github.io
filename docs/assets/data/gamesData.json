@@ -42,12 +42,6 @@
             "vr": true
         },
         {
-            "name": "Into the Radius",
-            "status": "not_began",
-            "playtime": -1,
-            "vr": true
-        },
-        {
             "name": "Project Zomboid",
             "status": "not_began",
             "playtime": 9999
@@ -82,12 +76,6 @@
             "name": "Volcanoids",
             "status": "not_began",
             "playtime": 15
-        },
-        {
-            "name": "Paradox of Hope",
-            "status": "in_progress",
-            "playtime": -1,
-            "vr": true
         }
     ],
     "toRevisit": [

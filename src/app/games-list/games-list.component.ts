@@ -22,9 +22,8 @@ export class GamesListComponent implements OnInit {
     this.gamesService.getData().subscribe(data => {
       this.toPlay = data.toPlay
       this.toRevisit = data.toRevisit
+      this.gameList = data.toPlay
     })
-
-    this.gameList = this.toPlay
 
     this.sortToPlay() 
   }
