@@ -7,11 +7,18 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class HeaderComponent {
   @ViewChild('navbarCollapse')
-  navbarCollapse!: ElementRef;
+  navbarCollapse!: ElementRef
+
+  currentLanguage: string = 'en'
+  languages: string[] = ['en', 'de'];
 
   closeDropdown(): void {
     if (this.navbarCollapse.nativeElement.classList.contains('show')) {
-      this.navbarCollapse.nativeElement.classList.remove('show');
+      this.navbarCollapse.nativeElement.classList.remove('show')
     }
+  }
+
+  switchLanguage(language: string) {
+    this.currentLanguage = language;
   }
 }

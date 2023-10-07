@@ -20,6 +20,16 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="schedule" (click)="closeDropdown()">Schedule</a>
         </li>
+        <li class="nav-item" ngbDropdown>
+          <button class="nav-link" ngbDropdownToggle>
+            <i class="fas fa-language"></i> Language
+          </button>
+          <ul ngbDropdownMenu>
+            <li *ngFor="let language of languages">
+              <button class="dropdown-item" [ngClass]="{'active': language === currentLanguage}" (click)="switchLanguage(language)">{{ language }}</button>
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
