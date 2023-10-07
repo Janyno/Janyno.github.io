@@ -7,7 +7,7 @@
         },
         {
             "name": "GTA 3",
-            "status": "in_progress",
+            "status": "completed",
             "playtime": 15
         },
         {
@@ -17,7 +17,7 @@
         },
         {
             "name": "GTA VC",
-            "status": "in_progress",
+            "status": "completed",
             "playtime": 18
         },
         {
@@ -76,6 +76,21 @@
             "name": "Volcanoids",
             "status": "not_began",
             "playtime": 15
+        },
+        {
+            "name": "The Dark Pictures Anthology: The Devil in Me",
+            "status": "not_began",
+            "playtime": 7
+        },
+        {
+            "name": "The Quarry",
+            "status": "not_began",
+            "playtime": 9
+        },
+        {
+            "name": "Tiny Tena´s Wonderlands",
+            "status": "not_began",
+            "playtime": 16
         }
     ],
     "toRevisit": [

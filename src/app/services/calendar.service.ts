@@ -55,6 +55,7 @@ export class CalendarService {
 
     events: EventEntry[] = [
         {title: 'Gamescom Opening Night', start: new Date('2023-8-22'), startTime: '19:30', color: { ...this.colors.yellow }, link: 'https://www.youtube.com/watch?v=eqh-rDzgVwQ'},
+        {title: 'Modern Warfare 3 Open Beta', start: new Date('2023-10-14'), startTime: '19:00', end: new Date('2023-10-16'), color: {...this.colors.red}},
         {title: 'Minecraft Live', start: new Date('2023-10-15'), startTime: '19:00', color: { ...this.colors.yellow }, link: 'https://www.youtube.com/minecraft'},
         {title: 'PAX West', start: new Date('2023-9-1'), end: new Date('2023-9-4') , startTime: '???', color: { ...this.colors.yellow }, link: 'https://www.twitch.tv/PAX/'},
         {title: 'Game Awards', start: new Date('2023-12-8'), startTime: '???', color: { ...this.colors.yellow }, link: 'https://www.youtube.com/@thegameawards'}
