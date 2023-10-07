@@ -1,5 +1,5 @@
 // week-calendar.component.ts
-import { Component } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { CalendarView, CalendarEvent } from 'angular-calendar';
 import { addWeeks, subWeeks, startOfWeek, endOfWeek } from 'date-fns';
 import { formatDate, registerLocaleData } from '@angular/common';
@@ -14,13 +14,29 @@ registerLocaleData(localeDe, 'de');
   templateUrl: './schedule.component.html',
   styleUrls: ['./schedule.component.scss']
 })
-export class ScheduleComponent {
+export class ScheduleComponent implements OnInit {
   view: CalendarView = CalendarView.Week
   viewDate: Date = new Date()
   events: ScheduleEntry[] = []
+  daysInWeek = 7
 
-  constructor(private calendarService: CalendarService) {
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any): void {
+    this.checkWindowSize()
+  }
+
+  constructor(private calendarService: CalendarService) {}
+
+  ngOnInit(): void {
     this.events = this.calendarService.schedule
+    this.checkWindowSize()
+  }
+
+  private checkWindowSize(): void {
+    const mobileViewBreakpoint = 768
+    const isMobileView = window.innerWidth < mobileViewBreakpoint
+
+    this.daysInWeek = isMobileView ? 3 : 7
   }
 
   getWeekDateRange(date: Date): string {

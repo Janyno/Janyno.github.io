@@ -297,6 +297,14 @@
     },
     {
         "name": "TENGOKU-DAIMAKYO",
-        "status": "watching"
+        "status": "wait_new_sep"
+    },
+    {
+        "name": "Hunter x Hunter",
+        "status": "aborted"
+    },
+    {
+        "name": "Goblin Slayer",
+        "status": "watch_new_season"
     }
 ]

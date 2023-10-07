@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { CalendarEvent, CalendarView } from 'angular-calendar';
 import { CalendarService } from '../services/calendar.service';
 import { addMonths, subMonths } from 'date-fns';
@@ -9,15 +9,20 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   templateUrl: './calendar.component.html',
   styleUrls: ['./calendar.component.scss']
 })
-export class CalendarComponent {
+export class CalendarComponent implements OnInit {
   view: CalendarView = CalendarView.Month;
   viewDate: Date = new Date();
   events: any = []
   selectedEvent: CalendarEvent | null = null;
   @ViewChild('eventModal', { static: true }) eventModal!: ElementRef;
 
-  constructor(private calendarService: CalendarService, private modalService: NgbModal) {
-    this.events = this.calendarService.getCalendarList()
+  constructor(
+    private calendarService: CalendarService,
+     private modalService: NgbModal
+  ) {}
+
+  ngOnInit(): void {
+    this.events = this.calendarService.getCalendarList() 
   }
 
   goToPreviousMonth(): void {
