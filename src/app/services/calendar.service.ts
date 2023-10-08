@@ -62,10 +62,33 @@ export class CalendarService {
     ]
 
     schedule: ScheduleEntry[] = [
-      {start: this.transformDateForSchedule([4, 10, 2023], [16, 0]), title: 'MONKEY GAMEEEEEE', end: this.transformDateForSchedule([4, 10, 2023], [22, 0]), color: this.getColor('saddlebrown')},
-      {start: this.transformDateForSchedule([5, 10, 2023], [16, 30]), title: 'VR Day', end: this.transformDateForSchedule([5, 10, 2023], [22, 0]), color: this.getColor('plum')},
-      {start: this.transformDateForSchedule([6, 10, 2023], [15, 0]), title: 'GTA Weekend', end: this.transformDateForSchedule([8, 10, 2023], [22, 0]), color: this.getColor('indianred')},
-      {start: this.transformDateForSchedule([9, 10, 2023], [16, 0]), title: 'MONKEY GAMEEEEEE', end: this.transformDateForSchedule([9, 10, 2023], [22, 0]), color: this.getColor('saddlebrown')},
+      {
+        start: this.transformDateForSchedule([4, 10, 2023], [16, 0]), title: 'MONKEY GAMEEEEEE', 
+        end: this.transformDateForSchedule([4, 10, 2023], [22, 0]), color: this.getColor('saddlebrown')
+      },
+      {
+        start: this.transformDateForSchedule([5, 10, 2023], [16, 30]), title: 'VR Day', 
+        end: this.transformDateForSchedule([5, 10, 2023], [22, 0]), color: this.getColor('plum')
+      },
+      {
+        start: this.transformDateForSchedule([6, 10, 2023], [15, 0]), title: 'GTA Weekend', 
+        end: this.transformDateForSchedule([8, 10, 2023], [22, 0]), color: this.getColor('indianred')
+      },
+      {
+        start: this.transformDateForSchedule([9, 10, 2023], [16, 0]), title: 'MONKEY GAMEEEEEE', 
+        end: this.transformDateForSchedule([9, 10, 2023], [20, 0]), color: this.getColor('saddlebrown')
+      },
+      {
+        start: this.transformDateForSchedule([10, 10, 2023], [16, 0]), title: 'Demo Dienstag', 
+        end: this.transformDateForSchedule([10, 10, 2023], [22, 0]), color: this.getColor('aqua')},
+      {
+        start: this.transformDateForSchedule([11, 10, 2023], [16, 0]), title: 'MONKE Mittwoch', 
+        end: this.transformDateForSchedule([11, 10, 2023], [22, 0]), color: this.getColor('saddlebrown')
+      },
+      {
+        start: this.transformDateForSchedule([12, 10, 2023], [16, 0]), title: 'Demo Donnerstag', 
+        end: this.transformDateForSchedule([12, 10, 2023], [22, 0]), color: this.getColor('aqua')
+      }
     ];
 
     getCalendarList() {
