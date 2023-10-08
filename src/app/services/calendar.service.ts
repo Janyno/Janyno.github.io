@@ -88,7 +88,23 @@ export class CalendarService {
       {
         start: this.transformDateForSchedule([12, 10, 2023], [16, 0]), title: 'Demo Donnerstag', 
         end: this.transformDateForSchedule([12, 10, 2023], [22, 0]), color: this.getColor('aqua')
-      }
+      },
+      {
+        start: this.transformDateForSchedule([13, 10, 2023], [16, 0]), title: 'Demos / Monke', 
+        end: this.transformDateForSchedule([13, 10, 2023], [22, 0]), color: this.getColor('deepskyblue')
+      },
+      {
+        start: this.transformDateForSchedule([14, 10, 2023], [16, 0]), title: 'MW3 Weekend', 
+        end: this.transformDateForSchedule([16, 10, 2023], [22, 0]), color: this.getColor('darkgrey')
+      },
+      {
+        start: this.transformDateForSchedule([21, 10, 2023], [19, 0]), title: 'The Quarry', 
+        end: this.transformDateForSchedule([22, 10, 2023], [20, 0]), color: this.getColor('dimgrey')
+      },
+      {
+        start: this.transformDateForSchedule([28, 10, 2023], [19, 0]), title: 'The Devil in Me', 
+        end: this.transformDateForSchedule([29, 10, 2023], [22, 0]), color: this.getColor('dimgrey')
+      },
     ];
 
     getCalendarList() {
@@ -122,10 +138,9 @@ export class CalendarService {
       let todayEntries = [];
     
       todayEntries = untransformedArr.filter(entry => {
-        const entryStartDate = entry.start;
-        const entryEndDate = entry.end; // Assuming you have an end date for the entry
+        const entryStartDate = entry.start
+        const entryEndDate = entry.end
         
-        // Check if the entry's start date is today or if the date range includes today
         const isEntryToday =
           (entryStartDate <= today && today <= entryEndDate) ||
           (entryStartDate.getDate() === today.getDate() &&

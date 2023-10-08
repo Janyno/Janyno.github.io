@@ -28,10 +28,12 @@ export class DashboardComponent implements OnInit {
     this.gamesService.getData().subscribe(gameData => {
       this.data.gameData.toPlayAmount = gameData.toPlay.length
       this.data.gameData.toRevisitAmount = gameData.toRevisit.length
-    }) 
+    })
+
     this.animeService.getData().subscribe(animeData => {
       this.data.animeAmount = animeData.length
     })
+    
     this.events = this.calendarService.getEvents()
     this.releases = this.calendarService.getReleases()
     this.todaySchedule = this.calendarService.getTodaySchedule()
