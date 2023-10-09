@@ -82,15 +82,15 @@ export class CalendarService {
         start: this.transformDateForSchedule([10, 10, 2023], [16, 0]), title: 'Demo Dienstag', 
         end: this.transformDateForSchedule([10, 10, 2023], [22, 0]), color: this.getColor('aqua')},
       {
-        start: this.transformDateForSchedule([11, 10, 2023], [16, 0]), title: 'MONKE Mittwoch', 
-        end: this.transformDateForSchedule([11, 10, 2023], [22, 0]), color: this.getColor('saddlebrown')
+        start: this.transformDateForSchedule([11, 10, 2023], [16, 0]), title: 'Temtem', 
+        end: this.transformDateForSchedule([11, 10, 2023], [22, 0]), color: this.getColor('cornflowerblue')
       },
       {
         start: this.transformDateForSchedule([12, 10, 2023], [16, 0]), title: 'Demo Donnerstag', 
         end: this.transformDateForSchedule([12, 10, 2023], [22, 0]), color: this.getColor('aqua')
       },
       {
-        start: this.transformDateForSchedule([13, 10, 2023], [16, 0]), title: 'Demos / Monke', 
+        start: this.transformDateForSchedule([13, 10, 2023], [16, 0]), title: 'Demos / Temtem', 
         end: this.transformDateForSchedule([13, 10, 2023], [22, 0]), color: this.getColor('deepskyblue')
       },
       {
