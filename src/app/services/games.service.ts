@@ -6,8 +6,6 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class GamesService {
-  toPlay: Game[] = []
-  toRevisit: Game[] = []
 
   constructor(private http: HttpClient) {}
 
