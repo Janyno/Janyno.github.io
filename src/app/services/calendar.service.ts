@@ -94,21 +94,21 @@ export class CalendarService {
         end: this.transformDateForSchedule([16, 10, 2023], [22, 0]), color: this.getColor('darkred')
       },
       {
-        start: this.transformDateForSchedule([17, 10, 2023], [16, 0]), title: 'Yakuza 7', 
-        end: this.transformDateForSchedule([21, 10, 2023], [17, 0]), color: this.getColor('darkorange')
+        start: this.transformDateForSchedule([17, 10, 2023], [16, 0]), title: 'Tiny Tina´s Wonderlands', 
+        end: this.transformDateForSchedule([21, 10, 2023], [17, 0]), color: this.getColor('hotpink')
       },
       {
         start: this.transformDateForSchedule([21, 10, 2023], [19, 0]), title: 'The Quarry', 
         end: this.transformDateForSchedule([22, 10, 2023], [20, 0]), color: this.getColor('dimgrey')
       },
       {
-        start: this.transformDateForSchedule([27, 10, 2023], [19, 0]), title: 'Modern Warfare 3', 
-        end: this.transformDateForSchedule([29, 10, 2023], [22, 0]), color: this.getColor('darkred')
+        start: this.transformDateForSchedule([28, 10, 2023], [19, 0]), title: 'The Devil in Me', 
+        end: this.transformDateForSchedule([29, 10, 2023], [22, 0]), color: this.getColor('dimgrey')
       },
       {
-        start: this.transformDateForSchedule([31, 10, 2023], [19, 0]), title: 'The Devil in Me', 
-        end: this.transformDateForSchedule([1, 11, 2023], [22, 0]), color: this.getColor('dimgrey')
-      },
+        start: this.transformDateForSchedule([3, 11, 2023], [19, 0]), title: 'Modern Warfare 3', 
+        end: this.transformDateForSchedule([5, 11, 2023], [22, 0]), color: this.getColor('darkred')
+      }
     ];
 
     getCalendarList() {

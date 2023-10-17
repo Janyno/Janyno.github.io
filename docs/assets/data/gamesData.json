@@ -32,7 +32,7 @@
         },
         {
             "name": "Yakuza 7",
-            "status": "in_progress",
+            "status": "not_began",
             "playtime": 45.5
         },
         {
@@ -43,7 +43,7 @@
         },
         {
             "name": "Project Zomboid",
-            "status": "not_began",
+            "status": "completed",
             "playtime": 9999
         },
         {
@@ -88,8 +88,8 @@
             "playtime": 9
         },
         {
-            "name": "Tiny Tena´s Wonderlands",
-            "status": "not_began",
+            "name": "Tiny Tina´s Wonderlands",
+            "status": "in_progress",
             "playtime": 16
         }
     ],
