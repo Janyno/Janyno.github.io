@@ -54,7 +54,7 @@
         },
         {
             "name": "Spiderman Remastered",
-            "status": "not_began",
+            "status": "completed",
             "playtime": 17
         },
         {
@@ -74,7 +74,7 @@
         },
         {
             "name": "Volcanoids",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 15
         },
         {
@@ -89,7 +89,7 @@
         },
         {
             "name": "Tiny Tina´s Wonderlands",
-            "status": "in_progress",
+            "status": "completed",
             "playtime": 16
         }
     ],
