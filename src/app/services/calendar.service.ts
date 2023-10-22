@@ -98,12 +98,12 @@ export class CalendarService {
         end: this.transformDateForSchedule([21, 10, 2023], [17, 0]), color: this.getColor('hotpink')
       },
       {
-        start: this.transformDateForSchedule([21, 10, 2023], [19, 0]), title: 'The Quarry', 
-        end: this.transformDateForSchedule([22, 10, 2023], [20, 0]), color: this.getColor('dimgrey')
-      },
-      {
         start: this.transformDateForSchedule([28, 10, 2023], [19, 0]), title: 'The Devil in Me', 
         end: this.transformDateForSchedule([29, 10, 2023], [22, 0]), color: this.getColor('dimgrey')
+      },
+      {
+        start: this.transformDateForSchedule([31, 10, 2023], [19, 0]), title: 'The Quarry', 
+        end: this.transformDateForSchedule([1, 11, 2023], [23, 59]), color: this.getColor('dimgrey')
       },
       {
         start: this.transformDateForSchedule([3, 11, 2023], [19, 0]), title: 'Modern Warfare 3', 

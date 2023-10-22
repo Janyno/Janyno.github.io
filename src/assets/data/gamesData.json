@@ -54,7 +54,7 @@
         },
         {
             "name": "Spiderman Remastered",
-            "status": "completed",
+            "status": "not_began",
             "playtime": 17
         },
         {
@@ -74,7 +74,7 @@
         },
         {
             "name": "Volcanoids",
-            "status": "in_progress",
+            "status": "completed",
             "playtime": 15
         },
         {
@@ -110,7 +110,22 @@
             "playtime": 9999
         },
         {
-            "name": "Minecraft Survival",
+            "name": "Minecraft Vanilla Survival",
+            "status": "not_began",
+            "playtime": 9999
+        },
+        {
+            "name": "Minecraft Modded Survival",
+            "status": "not_began",
+            "playtime": 9999
+        },
+        {
+            "name": "Euro Truck Simulator 2",
+            "status": "not_began",
+            "playtime": 9999
+        },
+        {
+            "name": "Sims 4",
             "status": "not_began",
             "playtime": 9999
         }
