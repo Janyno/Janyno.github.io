@@ -27,7 +27,7 @@
         },
         {
             "name": "Spyro Trilogy",
-            "status": "not_began",
+            "status": "completed",
             "playtime": 17
         },
         {
@@ -51,11 +51,6 @@
             "status": "in_progress",
             "playtime": 5,
             "vr": true
-        },
-        {
-            "name": "Spiderman Remastered",
-            "status": "not_began",
-            "playtime": 17
         },
         {
             "name": "Temtem",
