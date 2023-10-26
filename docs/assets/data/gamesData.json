@@ -86,6 +86,11 @@
             "name": "Tiny Tina´s Wonderlands",
             "status": "completed",
             "playtime": 16
+        },
+        {
+            "name": "Cyberpunk 2077: Phantom Liberty",
+            "status": "not_began",
+            "playtime": 31
         }
     ],
     "toRevisit": [
@@ -111,7 +116,7 @@
         },
         {
             "name": "Minecraft Modded Survival",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 9999
         },
         {
