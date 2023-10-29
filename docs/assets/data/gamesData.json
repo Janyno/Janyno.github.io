@@ -59,7 +59,7 @@
         },
         {
             "name": "Punch Club 2",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 18
         },
         {
@@ -107,16 +107,6 @@
         {
             "name": "Wynncraft",
             "status": "not_began",
-            "playtime": 9999
-        },
-        {
-            "name": "Minecraft Vanilla Survival",
-            "status": "not_began",
-            "playtime": 9999
-        },
-        {
-            "name": "Minecraft Modded Survival",
-            "status": "in_progress",
             "playtime": 9999
         },
         {

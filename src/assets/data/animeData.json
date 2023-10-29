@@ -306,5 +306,9 @@
     {
         "name": "Goblin Slayer",
         "status": "watch_new_season"
+    },
+    {
+        "name": "Undead Unluck",
+        "status": "watching"
     }
 ]
