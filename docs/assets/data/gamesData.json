@@ -6,29 +6,9 @@
             "playtime": 40.5
         },
         {
-            "name": "GTA 3",
-            "status": "completed",
-            "playtime": 15
-        },
-        {
-            "name": "GTA SA",
-            "status": "completed",
-            "playtime": 30.5
-        },
-        {
-            "name": "GTA VC",
-            "status": "completed",
-            "playtime": 18
-        },
-        {
             "name": "Life is Strange 2",
             "status": "not_began",
             "playtime": 16
-        },
-        {
-            "name": "Spyro Trilogy",
-            "status": "completed",
-            "playtime": 17
         },
         {
             "name": "Yakuza 7",
@@ -42,50 +22,15 @@
             "vr": true
         },
         {
-            "name": "Project Zomboid",
-            "status": "completed",
-            "playtime": 9999
-        },
-        {
             "name": "Labyrinthine",
             "status": "in_progress",
             "playtime": 5,
             "vr": true
         },
         {
-            "name": "Temtem",
-            "status": "completed",
-            "playtime": 70
-        },
-        {
-            "name": "Punch Club 2",
-            "status": "in_progress",
-            "playtime": 18
-        },
-        {
-            "name": "The Survivalists",
-            "status": "completed",
-            "playtime": 22
-        },
-        {
-            "name": "Volcanoids",
-            "status": "completed",
-            "playtime": 15
-        },
-        {
-            "name": "The Dark Pictures Anthology: The Devil in Me",
-            "status": "in_progress",
-            "playtime": 7
-        },
-        {
             "name": "The Quarry",
             "status": "in_progress",
             "playtime": 9
-        },
-        {
-            "name": "Tiny Tina´s Wonderlands",
-            "status": "completed",
-            "playtime": 16
         },
         {
             "name": "Cyberpunk 2077: Phantom Liberty",
