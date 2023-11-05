@@ -12,30 +12,14 @@
         },
         {
             "name": "Yakuza 7",
-            "status": "not_began",
-            "playtime": 45.5
-        },
-        {
-            "name": "Half Life Alyx",
             "status": "in_progress",
-            "playtime": 14,
-            "vr": true
+            "playtime": 45.5
         },
         {
             "name": "Labyrinthine",
             "status": "in_progress",
             "playtime": 5,
             "vr": true
-        },
-        {
-            "name": "The Quarry",
-            "status": "in_progress",
-            "playtime": 9
-        },
-        {
-            "name": "Punch Club 2",
-            "status": "in_progress",
-            "playtime": 18
         },
         {
             "name": "Cyberpunk 2077: Phantom Liberty",
@@ -66,6 +50,16 @@
         },
         {
             "name": "Sims 4",
+            "status": "not_began",
+            "playtime": 9999
+        },
+        {
+            "name": "Skyrim",
+            "status": "not_began",
+            "playtime": 9999
+        },
+        {
+            "name": "Fallout 4",
             "status": "not_began",
             "playtime": 9999
         }
