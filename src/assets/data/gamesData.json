@@ -12,7 +12,7 @@
         },
         {
             "name": "Yakuza 7",
-            "status": "in_progress",
+            "status": "not_began",
             "playtime": 45.5
         },
         {
@@ -23,8 +23,9 @@
         },
         {
             "name": "Cyberpunk 2077: Phantom Liberty",
-            "status": "not_began",
-            "playtime": 31
+            "status": "in_progress",
+            "playtime": 30,
+            "all_achievements": true
         }
     ],
     "toRevisit": [

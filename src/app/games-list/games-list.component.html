@@ -45,6 +45,7 @@
                 <div class="flex-grow-1">
                   <span>{{ game.name }}</span>
                   <span class="vr-box" *ngIf="game.vr">VR</span>
+                  <span class="all_achievements-box" *ngIf="game.all_achievements">100%</span>
                 </div>
                 <div [ngSwitch]="game.playtime">
                   <ng-container *ngSwitchCase="9999">&infin; Hrs.</ng-container>

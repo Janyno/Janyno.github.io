@@ -2,5 +2,6 @@ export interface Game {
     name: string,
     status: 'not_began' | 'in_progress' | 'completed',
     playtime : number,
-    vr?: boolean
+    vr?: boolean,
+    all_achievements?: boolean
 }
