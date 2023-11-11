@@ -20,12 +20,6 @@
             "status": "in_progress",
             "playtime": 5,
             "vr": true
-        },
-        {
-            "name": "Cyberpunk 2077: Phantom Liberty",
-            "status": "in_progress",
-            "playtime": 30,
-            "all_achievements": true
         }
     ],
     "toRevisit": [
