@@ -50,6 +50,7 @@
                 <div [ngSwitch]="game.playtime">
                   <ng-container *ngSwitchCase="9999">&infin; Hrs.</ng-container>
                   <ng-container *ngSwitchCase="-1">??? Hrs.</ng-container>
+                  <ng-container *ngSwitchCase="undefined"></ng-container>
                   <ng-container *ngSwitchDefault>{{ game.playtime }} Hrs.</ng-container>
                 </div>
               </li>

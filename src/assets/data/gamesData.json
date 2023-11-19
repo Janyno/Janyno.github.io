@@ -12,7 +12,7 @@
         },
         {
             "name": "Yakuza 7",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 45.5
         },
         {
@@ -57,6 +57,32 @@
             "name": "Fallout 4",
             "status": "not_began",
             "playtime": 9999
+        }
+    ],
+    "wantToPlay": [
+        {
+            "name": "Like a Dragon Gaiden: Kiryu",
+            "status": "wanna_play"
+        },
+        {
+            "name": "Like a Dragon: Ishin!",
+            "status": "wanna_play"
+        },
+        {
+            "name": "Judgement",
+            "status": "wanna_play"
+        },
+        {
+            "name": "Lost Judgement",
+            "status": "wanna_play"
+        },
+        {
+            "name": "Alan Wake 2",
+            "status": "wanna_play"
+        },
+        {
+            "name": "RE4 Remake",
+            "status": "wanna_play"
         }
     ]
 }

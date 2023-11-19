@@ -12,6 +12,8 @@ export class StatusPipe implements PipeTransform {
         return 'In Progress';
       case 'completed':
         return 'Completed';
+      case 'wanna_play':
+        return 'Want to Play';
       case 'aborted':
         return 'Aborted';
       case 'watching':

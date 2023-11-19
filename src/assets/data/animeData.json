@@ -77,7 +77,7 @@
     },
     {
         "name": "Attack on Titan",
-        "status": "wait_new_sep"
+        "status": "completed"
     },
     {
         "name": "Chainsaw Man",
@@ -85,7 +85,7 @@
     },
     {
         "name": "The Rising of the Shield Hero",
-        "status": "wait_new_sep"
+        "status": "watching"
     },
     {
         "name": "BORUTO",
@@ -305,7 +305,7 @@
     },
     {
         "name": "Goblin Slayer",
-        "status": "watch_new_season"
+        "status": "watching"
     },
     {
         "name": "Undead Unluck",

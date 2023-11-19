@@ -11,9 +11,10 @@ export class GamesListComponent implements OnInit {
   toPlay: Game[] = []
   toRevisit: Game[] = []
   gameList: Game[] = []
+  wannaPlay: Game[] = []
   highlightedIndex: number | null = null
   sortingDirection: 'asc' | 'desc' = 'asc'
-  availableStatuses: string[] = ['not_began', 'in_progress', 'completed'];
+  availableStatuses: string[] = ['not_began', 'in_progress', 'completed', 'wanna_play'];
   selectedFilter: string | null = null;
 
   constructor(private gamesService: GamesService) {}
@@ -21,6 +22,7 @@ export class GamesListComponent implements OnInit {
   ngOnInit(): void {
     this.gamesService.getData().subscribe(data => {
       this.toPlay = data.toPlay
+      this.wannaPlay = data.wantToPlay
       this.toRevisit = data.toRevisit
       this.gameList = data.toPlay
     })
@@ -31,7 +33,8 @@ export class GamesListComponent implements OnInit {
   statusColorMap: { [status: string]: string } = {
     not_began: 'red',
     in_progress: 'yellow',
-    completed: 'green'
+    completed: 'green',
+    wanna_play: 'aqua'
   };
 
   highlightRandomGame() {
@@ -84,6 +87,9 @@ export class GamesListComponent implements OnInit {
         return 'In Progress';
       case 'completed':
         return 'Completed';
+      case 'wanna_play':
+        this.toPlay = this.wannaPlay
+        return 'Want to Play';
       default:
         return value;
     }
@@ -91,9 +97,10 @@ export class GamesListComponent implements OnInit {
 
   getAmountOfStatus(status: string): number {
     let amount: number = 0
+    const arr = this.gameList.concat(this.wannaPlay)
 
-    for (let i = 0; i < this.gameList.length; i++) {
-      if(this.gameList[i].status === status) {
+    for (let i = 0; i < arr.length; i++) {
+      if(arr[i].status === status) {
         amount++
       }
     }
