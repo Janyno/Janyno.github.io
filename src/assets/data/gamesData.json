@@ -7,19 +7,8 @@
         },
         {
             "name": "Life is Strange 2",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 16
-        },
-        {
-            "name": "Yakuza 7",
-            "status": "in_progress",
-            "playtime": 45.5
-        },
-        {
-            "name": "Labyrinthine",
-            "status": "in_progress",
-            "playtime": 5,
-            "vr": true
         }
     ],
     "toRevisit": [
@@ -82,6 +71,22 @@
         },
         {
             "name": "RE4 Remake",
+            "status": "wanna_play"
+        },
+        {
+            "name": "AC: Mirage",
+            "status": "wanna_play"
+        },
+        {
+            "name": "Avatar Frontiers of Pandora",
+            "status": "wanna_play"
+        },
+        {
+            "name": "The Crew Motorsport",
+            "status": "wanna_play"
+        },
+        {
+            "name": "Robocop: Rogue City",
             "status": "wanna_play"
         }
     ]
