@@ -2,12 +2,12 @@
     "toPlay": [
         {
             "name": "Tales of Arise",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 40.5
         },
         {
             "name": "Life is Strange 2",
-            "status": "in_progress",
+            "status": "not_began",
             "playtime": 16
         }
     ],
@@ -23,6 +23,11 @@
             "playtime": 9999
         },
         {
+            "name": "Minecraft Legends",
+            "status": "not_began",
+            "playtime": 9999
+        }
+        {
             "name": "Wynncraft",
             "status": "not_began",
             "playtime": 9999
@@ -34,16 +39,6 @@
         },
         {
             "name": "Sims 4",
-            "status": "not_began",
-            "playtime": 9999
-        },
-        {
-            "name": "Skyrim",
-            "status": "not_began",
-            "playtime": 9999
-        },
-        {
-            "name": "Fallout 4",
             "status": "not_began",
             "playtime": 9999
         }
