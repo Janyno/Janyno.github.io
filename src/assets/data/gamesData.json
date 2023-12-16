@@ -23,10 +23,15 @@
             "playtime": 9999
         },
         {
-            "name": "Minecraft Legends",
+            "name": "Minecraft Legends Server",
             "status": "not_began",
             "playtime": 9999
-        }
+        },
+        {
+            "name": "House Flipper",
+            "status": "not_began",
+            "playtime": 9999
+        },
         {
             "name": "Wynncraft",
             "status": "not_began",
