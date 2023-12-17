@@ -2,13 +2,28 @@
     "toPlay": [
         {
             "name": "Tales of Arise",
-            "status": "in_progress",
+            "status": "completed",
             "playtime": 40.5
         },
         {
             "name": "Life is Strange 2",
             "status": "not_began",
             "playtime": 16
+        },
+        {
+            "name": "AC: Mirage",
+            "status": "not_began",
+            "playtime": 17
+        },
+        {
+            "name": "Avatar Frontiers of Pandora",
+            "status": "not_began",
+            "playtime": 20
+        },
+        {
+            "name": "The Crew Motorsport",
+            "status": "in_progress",
+            "playtime": -1
         }
     ],
     "toRevisit": [
@@ -39,7 +54,7 @@
         },
         {
             "name": "Euro Truck Simulator 2",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 9999
         },
         {
@@ -71,18 +86,6 @@
         },
         {
             "name": "RE4 Remake",
-            "status": "wanna_play"
-        },
-        {
-            "name": "AC: Mirage",
-            "status": "wanna_play"
-        },
-        {
-            "name": "Avatar Frontiers of Pandora",
-            "status": "wanna_play"
-        },
-        {
-            "name": "The Crew Motorsport",
             "status": "wanna_play"
         },
         {
