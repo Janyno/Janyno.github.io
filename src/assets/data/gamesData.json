@@ -12,12 +12,12 @@
         },
         {
             "name": "AC: Mirage",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 17
         },
         {
             "name": "Avatar Frontiers of Pandora",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 20
         },
         {
@@ -38,13 +38,8 @@
             "playtime": 9999
         },
         {
-            "name": "Minecraft Legends Server",
-            "status": "not_began",
-            "playtime": 9999
-        },
-        {
             "name": "House Flipper",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 9999
         },
         {
@@ -59,7 +54,22 @@
         },
         {
             "name": "Sims 4",
+            "status": "in_progress",
+            "playtime": 9999
+        },
+        {
+            "name": "Gas Station Simulator",
             "status": "not_began",
+            "playtime": 9999
+        },
+        {
+            "name": "Farming Simulator 2023",
+            "status": "in_progress",
+            "playtime": 9999
+        },
+        {
+            "name": "Weed Shop 3",
+            "status": "in_progress",
             "playtime": 9999
         }
     ],
