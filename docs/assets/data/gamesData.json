@@ -1,11 +1,6 @@
 {
     "toPlay": [
         {
-            "name": "Tales of Arise",
-            "status": "completed",
-            "playtime": 40.5
-        },
-        {
             "name": "Life is Strange 2",
             "status": "not_began",
             "playtime": 16
@@ -19,11 +14,6 @@
             "name": "Avatar Frontiers of Pandora",
             "status": "in_progress",
             "playtime": 20
-        },
-        {
-            "name": "The Crew Motorsport",
-            "status": "in_progress",
-            "playtime": -1
         }
     ],
     "toRevisit": [
