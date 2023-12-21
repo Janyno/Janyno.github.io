@@ -108,7 +108,31 @@ export class CalendarService {
       {
         start: this.transformDateForSchedule([3, 11, 2023], [19, 0]), title: 'Modern Warfare 3', 
         end: this.transformDateForSchedule([5, 11, 2023], [22, 0]), color: this.getColor('darkred')
-      }
+      },
+      {
+        start: this.transformDateForSchedule([22, 12, 2023], [16, 30]), title: 'Avatar Frontiers of Pandora', 
+        end: this.transformDateForSchedule([22, 12, 2023], [21, 0]), color: this.getColor('lawngreen')
+      },
+      {
+        start: this.transformDateForSchedule([22, 12, 2023], [21, 0]), title: 'Skyrim', 
+        end: this.transformDateForSchedule([22, 12, 2023], [23, 59]), color: this.getColor('grey')
+      },
+      {
+        start: this.transformDateForSchedule([23, 12, 2023], [9, 30]), title: 'Avatar Frontiers of Pandora', 
+        end: this.transformDateForSchedule([23, 12, 2023], [16, 0]), color: this.getColor('lawngreen')
+      },
+      {
+        start: this.transformDateForSchedule([23, 12, 2023], [20, 30]), title: 'ETS 2', 
+        end: this.transformDateForSchedule([23, 12, 2023], [23, 59]), color: this.getColor('gold')
+      },
+      {
+        start: this.transformDateForSchedule([24, 12, 2023], [9, 30]), title: 'Avatar Frontiers of Pandora', 
+        end: this.transformDateForSchedule([24, 12, 2023], [18, 0]), color: this.getColor('lawngreen')
+      },
+      {
+        start: this.transformDateForSchedule([24, 12, 2023], [21, 30]), title: 'Indie Games', 
+        end: this.transformDateForSchedule([24, 12, 2023], [23, 59]), color: this.getColor('aquamarine')
+      },
     ];
 
     getCalendarList() {
