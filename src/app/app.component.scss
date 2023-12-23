@@ -1,14 +1,36 @@
-:host {
-    ::ng-deep .sort {
-        border-radius: 300px;
+:host ::ng-deep .sort {
+    border-radius: 300px;
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0;
+    margin-right: 10px;
+
+    &:active {
         background-color: transparent;
         border-color: transparent;
-        padding: 0;
-        margin-right: 10px;
+    }
+}
 
-        &:active {
-            background-color: transparent;
-            border-color: transparent;
-        }
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: snowfall linear infinite;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
     }
 }

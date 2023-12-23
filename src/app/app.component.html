@@ -1,3 +1,4 @@
+<div class="snowflake" *ngFor="let snowflake of snowflakes; let i = index" [style.left.px]="snowflake.left" [style.animation-duration.s]="snowflake.speed"></div>
 <app-header></app-header>
 <div appBackground>
     <router-outlet></router-outlet>
