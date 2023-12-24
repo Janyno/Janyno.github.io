@@ -9,11 +9,6 @@
             "name": "AC: Mirage",
             "status": "in_progress",
             "playtime": 17
-        },
-        {
-            "name": "Avatar Frontiers of Pandora",
-            "status": "in_progress",
-            "playtime": 20
         }
     ],
     "toRevisit": [
@@ -30,11 +25,6 @@
         {
             "name": "Wynncraft",
             "status": "not_began",
-            "playtime": 9999
-        },
-        {
-            "name": "Euro Truck Simulator 2",
-            "status": "in_progress",
             "playtime": 9999
         },
         {
