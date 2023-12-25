@@ -15,8 +15,8 @@ export class AppComponent implements OnInit {
   createSnowflakes(): void {
     for (let i = 0; i < 50; i++) {
       this.snowflakes.push({
-        left: Math.random() * window.innerWidth,
-        speed: Math.random() * 2 + 0.5
+        left: Math.random() * window.innerWidth - 10,
+        speed: Math.random() * 2 + 1
       });
     }
   }
