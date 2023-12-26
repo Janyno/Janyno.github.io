@@ -133,6 +133,34 @@ export class CalendarService {
         start: this.transformDateForSchedule([24, 12, 2023], [21, 30]), title: 'Indie Games', 
         end: this.transformDateForSchedule([24, 12, 2023], [23, 59]), color: this.getColor('aquamarine')
       },
+      {
+        start: this.transformDateForSchedule([26, 12, 2023], [13, 0]), title: 'Bright Memory: Infinite', 
+        end: this.transformDateForSchedule([26, 12, 2023], [18, 0]), color: this.getColor('mediumaquamarine')
+      },
+      {
+        start: this.transformDateForSchedule([26, 12, 2023], [20, 0]), title: 'Postal 4', 
+        end: this.transformDateForSchedule([26, 12, 2023], [23, 59]), color: this.getColor('darkred')
+      },
+      {
+        start: this.transformDateForSchedule([27, 12, 2023], [10, 0]), title: 'Red Faction: Guerilla', 
+        end: this.transformDateForSchedule([27, 12, 2023], [18, 0]), color: this.getColor('orange')
+      },
+      {
+        start: this.transformDateForSchedule([27, 12, 2023], [20, 0]), title: 'Postal 4', 
+        end: this.transformDateForSchedule([27, 12, 2023], [23, 59]), color: this.getColor('darkred')
+      },
+      {
+        start: this.transformDateForSchedule([28, 12, 2023], [10, 0]), title: 'AC: Mirage', 
+        end: this.transformDateForSchedule([29, 12, 2023], [23, 59]), color: this.getColor('beige')
+      },
+      {
+        start: this.transformDateForSchedule([30, 12, 2023], [10, 0]), title: 'Eastern Exorcist', 
+        end: this.transformDateForSchedule([30, 12, 2023], [18, 0]), color: this.getColor('lightgrey')
+      },
+      {
+        start: this.transformDateForSchedule([30, 12, 2023], [20, 0]), title: 'Contraband Police', 
+        end: this.transformDateForSchedule([30, 12, 2023], [23, 59]), color: this.getColor('yellow')
+      },
     ];
 
     getCalendarList() {
