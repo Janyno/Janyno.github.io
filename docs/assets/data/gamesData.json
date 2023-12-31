@@ -9,6 +9,26 @@
             "name": "AC: Mirage",
             "status": "in_progress",
             "playtime": 17
+        },
+        {
+            "name": "Contraband Police",
+            "status": "not_began",
+            "playtime": 13
+        },
+        {
+            "name": "Wildfire",
+            "status": "not_began",
+            "playtime": 8
+        },
+        {
+            "name": "Trepang2",
+            "status": "not_began",
+            "playtime": 8.5
+        },
+        {
+            "name": "Eastern Exorcist",
+            "status": "not_began",
+            "playtime": 9
         }
     ],
     "toRevisit": [
@@ -24,12 +44,12 @@
         },
         {
             "name": "Wynncraft",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 9999
         },
         {
             "name": "Sims 4",
-            "status": "in_progress",
+            "status": "not_began",
             "playtime": 9999
         },
         {
@@ -39,7 +59,7 @@
         },
         {
             "name": "Farming Simulator 2023",
-            "status": "in_progress",
+            "status": "not_began",
             "playtime": 9999
         }
     ],
