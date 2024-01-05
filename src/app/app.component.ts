@@ -9,7 +9,7 @@ export class AppComponent implements OnInit {
   snowflakes: any[] = [];
 
   ngOnInit(): void {
-    this.createSnowflakes();
+    // this.createSnowflakes();
   }
 
   createSnowflakes(): void {
