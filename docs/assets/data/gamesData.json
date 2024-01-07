@@ -7,12 +7,12 @@
         },
         {
             "name": "Contraband Police",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 13
         },
         {
-            "name": "Wildfire",
-            "status": "in_progress",
+            "name": "Bum Simulator",
+            "status": "not_began",
             "playtime": 8
         },
         {
