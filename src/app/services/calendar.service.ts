@@ -161,6 +161,26 @@ export class CalendarService {
         start: this.transformDateForSchedule([30, 12, 2023], [20, 0]), title: 'Contraband Police', 
         end: this.transformDateForSchedule([30, 12, 2023], [23, 59]), color: this.getColor('yellow')
       },
+      {
+        start: this.transformDateForSchedule([13, 1, 2024], [0, 0]), title: 'Contraband Police', 
+        end: this.transformDateForSchedule([13, 1, 2024], [23, 59]), color: this.getColor('yellow')
+      },
+      {
+        start: this.transformDateForSchedule([14, 1, 2024], [0, 0]), title: 'Contraband Police', 
+        end: this.transformDateForSchedule([14, 1, 2024], [16, 0]), color: this.getColor('yellow')
+      },
+      {
+        start: this.transformDateForSchedule([14, 1, 2024], [16, 0]), title: 'Sims 4', 
+        end: this.transformDateForSchedule([14, 1, 2024], [23, 0]), color: this.getColor('greenyellow')
+      },
+      {
+        start: this.transformDateForSchedule([15, 1, 2024], [16, 0]), title: 'Sims 4 / Eastern Exorcist', 
+        end: this.transformDateForSchedule([15, 1, 2024], [23, 0]), color: this.getColor('greenyellow')
+      },
+      {
+        start: this.transformDateForSchedule([16, 1, 2024], [16, 0]), title: 'Sims 4 / Eastern Exorcist', 
+        end: this.transformDateForSchedule([16, 1, 2024], [23, 0]), color: this.getColor('greenyellow')
+      },
     ];
 
     getCalendarList() {

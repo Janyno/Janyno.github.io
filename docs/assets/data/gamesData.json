@@ -16,11 +16,6 @@
             "playtime": 8
         },
         {
-            "name": "Trepang2",
-            "status": "not_began",
-            "playtime": 8.5
-        },
-        {
             "name": "Eastern Exorcist",
             "status": "not_began",
             "playtime": 9
@@ -44,16 +39,11 @@
         },
         {
             "name": "Sims 4",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 9999
         },
         {
             "name": "Gas Station Simulator",
-            "status": "not_began",
-            "playtime": 9999
-        },
-        {
-            "name": "Farming Simulator 22",
             "status": "not_began",
             "playtime": 9999
         }
