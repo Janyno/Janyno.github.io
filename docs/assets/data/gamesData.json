@@ -12,7 +12,7 @@
         },
         {
             "name": "Eastern Exorcist",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 9
         }
     ],
@@ -24,6 +24,16 @@
         },
         {
             "name": "Hypixel Skyblock",
+            "status": "not_began",
+            "playtime": 9999
+        },
+        {
+            "name": "Skyrim Modded",
+            "status": "not_began",
+            "playtime": 9999
+        },
+        {
+            "name": "Fallout 4 Modded",
             "status": "not_began",
             "playtime": 9999
         },
