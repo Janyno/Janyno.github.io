@@ -168,15 +168,7 @@ export class CalendarService {
       {
         start: this.transformDateForSchedule([14, 1, 2024], [11, 0]), title: 'Sims 4', 
         end: this.transformDateForSchedule([14, 1, 2024], [23, 0]), color: this.getColor('greenyellow')
-      },
-      {
-        start: this.transformDateForSchedule([15, 1, 2024], [16, 0]), title: 'Eastern Exorcist', 
-        end: this.transformDateForSchedule([15, 1, 2024], [23, 0]), color: this.getColor('mistyrose')
-      },
-      {
-        start: this.transformDateForSchedule([16, 1, 2024], [16, 0]), title: 'Eastern Exorcist', 
-        end: this.transformDateForSchedule([16, 1, 2024], [23, 0]), color: this.getColor('mistyrose')
-      },
+      }
     ];
 
     getCalendarList() {
