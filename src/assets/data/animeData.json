@@ -9,7 +9,7 @@
     },
     {
         "name": "Jujutsu Kaisen",
-        "status": "watching"
+        "status": "wait_new_sep"
     },
     {
         "name": "Hell´s Paradise",
@@ -21,11 +21,11 @@
     },
     {
         "name": "Dr. STONE",
-        "status": "wait_new_sep"
+        "status": "watch_new_season"
     },
     {
         "name": "Dead Mount Death Play",
-        "status": "watching"
+        "status": "on_pause_maybe"
     },
     {
         "name": "Baki",
@@ -33,11 +33,11 @@
     },
     {
         "name": "Baki Hanma: Son of Ogre",
-        "status": "watching"
+        "status": "on_pause_maybe"
     },
     {
         "name": "Zom 100: Bucket List of the Dead",
-        "status": "watching"
+        "status": "on_pause_maybe"
     },
     {
         "name": "Bungo Stray Dogs",
@@ -85,7 +85,7 @@
     },
     {
         "name": "The Rising of the Shield Hero",
-        "status": "watching"
+        "status": "watch_new_season"
     },
     {
         "name": "BORUTO",
@@ -93,11 +93,11 @@
     },
     {
         "name": "Tokyo Revengers",
-        "status": "watching"
+        "status": "watch_new_season"
     },
     {
         "name": "Fire Force",
-        "status": "aborted"
+        "status": "watch_new_season"
     },
     {
         "name": "Tokyo Ghoul",
@@ -305,10 +305,26 @@
     },
     {
         "name": "Goblin Slayer",
-        "status": "watching"
+        "status": "wait_new_sep"
     },
     {
         "name": "Undead Unluck",
+        "status": "on_pause_maybe"
+    },
+    {
+        "name": "Solo Leveling",
         "status": "watching"
+    },
+    {
+        "name": "Junji Ito Collection",
+        "status": "on_pause_maybe"
+    },
+    {
+        "name": "MASHLE: MAGIC AND MUSCLES",
+        "status": "aborted"
+    },
+    {
+        "name": "Blue Exorcist",
+        "status": "aborted"
     }
 ]

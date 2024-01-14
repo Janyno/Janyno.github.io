@@ -25,6 +25,7 @@
                     [class.active]="!selectedFilter"
                   >
                     Show All
+                    <span class="text-end">{{ animeListBackup.length }}</span> <!-- Add this line -->
                   </button>
                   <button
                     *ngFor="let status of availableStatuses"
