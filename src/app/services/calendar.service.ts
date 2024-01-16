@@ -174,8 +174,16 @@ export class CalendarService {
         end: this.transformDateForSchedule([15, 1, 2024], [23, 0]), color: this.getColor('saddlebrown')
       },
       {
-        start: this.transformDateForSchedule([16, 1, 2024], [18, 0]), title: 'Bum Simulator', 
-        end: this.transformDateForSchedule([16, 1, 2024], [22, 0]), color: this.getColor('saddlebrown')
+        start: this.transformDateForSchedule([16, 1, 2024], [18, 0]), title: 'Sims 4', 
+        end: this.transformDateForSchedule([16, 1, 2024], [22, 0]), color: this.getColor('greenyellow')
+      },
+      {
+        start: this.transformDateForSchedule([17, 1, 2024], [18, 0]), title: 'Sims 4', 
+        end: this.transformDateForSchedule([17, 1, 2024], [22, 0]), color: this.getColor('greenyellow')
+      },
+      {
+        start: this.transformDateForSchedule([18, 1, 2024], [18, 0]), title: 'Sims 4', 
+        end: this.transformDateForSchedule([18, 1, 2024], [22, 0]), color: this.getColor('greenyellow')
       },
       {
         start: this.transformDateForSchedule([19, 1, 2024], [15, 0]), title: 'Life is Strange 2', 

@@ -4,11 +4,6 @@
             "name": "Life is Strange 2",
             "status": "not_began",
             "playtime": 16
-        },
-        {
-            "name": "Bum Simulator",
-            "status": "in_progress",
-            "playtime": 8
         }
     ],
     "toRevisit": [
