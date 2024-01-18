@@ -2,7 +2,7 @@
     "toPlay": [
         {
             "name": "Life is Strange 2",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 16
         }
     ],
@@ -19,22 +19,12 @@
         },
         {
             "name": "Skyrim Modded",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 9999
         },
         {
             "name": "Fallout 4 Modded",
             "status": "not_began",
-            "playtime": 9999
-        },
-        {
-            "name": "Wynncraft",
-            "status": "in_progress",
-            "playtime": 9999
-        },
-        {
-            "name": "Sims 4",
-            "status": "in_progress",
             "playtime": 9999
         },
         {
