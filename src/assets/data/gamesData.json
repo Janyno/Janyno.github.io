@@ -1,6 +1,10 @@
 {
     "toPlay": [
-        
+        {
+            "name": "Hellblade: Senua's Sacrifice",
+            "status": "not_began",
+            "playtime": 8
+        }
     ],
     "toRevisit": [
         {
