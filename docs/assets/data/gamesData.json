@@ -31,11 +31,6 @@
             "name": "Gas Station Simulator",
             "status": "not_began",
             "playtime": 9999
-        },
-        {
-            "name": "FF XV",
-            "status": "not_began",
-            "playtime": 35
         }
     ],
     "wantToPlay": [
