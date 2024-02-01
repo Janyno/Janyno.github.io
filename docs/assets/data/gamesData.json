@@ -4,31 +4,16 @@
             "name": "Hellblade: Senua's Sacrifice",
             "status": "not_began",
             "playtime": 8
+        },
+        {
+            "name": "Resident Evil 4",
+            "status": "not_began",
+            "playtime": 24
         }
     ],
     "toRevisit": [
         {
             "name": "Dead by Daylight",
-            "status": "not_began",
-            "playtime": 9999
-        },
-        {
-            "name": "Hypixel Skyblock",
-            "status": "not_began",
-            "playtime": 9999
-        },
-        {
-            "name": "Skyrim Modded",
-            "status": "in_progress",
-            "playtime": 9999
-        },
-        {
-            "name": "Fallout 4 Modded",
-            "status": "not_began",
-            "playtime": 9999
-        },
-        {
-            "name": "Gas Station Simulator",
             "status": "not_began",
             "playtime": 9999
         }
@@ -52,10 +37,6 @@
         },
         {
             "name": "Alan Wake 2",
-            "status": "wanna_play"
-        },
-        {
-            "name": "RE4 Remake",
             "status": "wanna_play"
         },
         {

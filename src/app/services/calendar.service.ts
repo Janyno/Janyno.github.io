@@ -196,7 +196,23 @@ export class CalendarService {
       {
         start: this.transformDateForSchedule([21, 1, 2024], [12, 0]), title: 'Life is Strange 2', 
         end: this.transformDateForSchedule([21, 1, 2024], [23, 0]), color: this.getColor('coral')
-      }
+      },
+      {
+        start: this.transformDateForSchedule([2, 2, 2024], [14, 0]), title: 'Resident Evil 4', 
+        end: this.transformDateForSchedule([4, 2, 2024], [23, 0]), color: this.getColor('darkred')
+      },
+      {
+        start: this.transformDateForSchedule([5, 2, 2024], [18, 0]), title: 'House Flipper', 
+        end: this.transformDateForSchedule([5, 2, 2024], [22, 0]), color: this.getColor('dodgerblue')
+      },
+      {
+        start: this.transformDateForSchedule([6, 2, 2024], [17, 0]), title: 'Demos', 
+        end: this.transformDateForSchedule([6, 2, 2024], [23, 0]), color: this.getColor('azure')
+      },
+      {
+        start: this.transformDateForSchedule([7, 2, 2024], [18, 0]), title: 'Demos', 
+        end: this.transformDateForSchedule([7, 2, 2024], [22, 0]), color: this.getColor('azure')
+      },
     ];
 
     getCalendarList() {
