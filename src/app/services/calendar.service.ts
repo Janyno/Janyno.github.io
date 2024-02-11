@@ -213,6 +213,30 @@ export class CalendarService {
         start: this.transformDateForSchedule([7, 2, 2024], [18, 0]), title: 'Demos', 
         end: this.transformDateForSchedule([7, 2, 2024], [22, 0]), color: this.getColor('azure')
       },
+      {
+        start: this.transformDateForSchedule([12, 2, 2024], [18, 0]), title: 'Blade & Sorcery', 
+        end: this.transformDateForSchedule([12, 2, 2024], [20, 0]), color: this.getColor('lightgray')
+      },
+      {
+        start: this.transformDateForSchedule([12, 2, 2024], [20, 0]), title: 'DBD Event', 
+        end: this.transformDateForSchedule([12, 2, 2024], [23, 0]), color: this.getColor('dimgrey')
+      },
+      {
+        start: this.transformDateForSchedule([13, 2, 2024], [17, 0]), title: 'DBD Event / House Flipper',
+        end: this.transformDateForSchedule([13, 2, 2024], [23, 0]), color: this.getColor('dimgrey')
+      },
+      {
+        start: this.transformDateForSchedule([14, 2, 2024], [18, 0]), title: 'DBD Event / House Flipper / Skyrim',
+        end: this.transformDateForSchedule([14, 2, 2024], [23, 0]), color: this.getColor('dimgrey')
+      },
+      {
+        start: this.transformDateForSchedule([15, 2, 2024], [17, 0]), title: 'House Flipper',
+        end: this.transformDateForSchedule([15, 2, 2024], [23, 0]), color: this.getColor('lightblue')
+      },
+      {
+        start: this.transformDateForSchedule([16, 2, 2024], [17, 0]), title: 'RE 4',
+        end: this.transformDateForSchedule([18, 2, 2024], [23, 0]), color: this.getColor('silver')
+      },
     ];
 
     getCalendarList() {
