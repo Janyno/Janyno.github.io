@@ -38,14 +38,15 @@
                     </button>
                   </div>
                 </div>
-                <button class="btn btn-primary w-30" (click)="highlightRandomGame()">Random</button>
+                <button class="btn btn-primary w-40" (click)="highlightRandomGame()">Random</button>
               </li>
               <li class="list-group-item d-flex align-items-center" *ngFor="let game of toPlay; let i = index" [class.highlighted]="highlightedIndex === i">
                 <i class="material-icons icon me-2" *ngIf="game.status" [style.color]="statusColorMap[game.status]">circle</i>
                 <div class="flex-grow-1">
                   <span>{{ game.name }}</span>
                   <span class="vr-box" *ngIf="game.vr">VR</span>
-                  <span class="all_achievements-box" *ngIf="game.all_achievements">100%</span>
+                  <span class="all-achievements-box" *ngIf="game.all_achievements">100%</span>
+                  <span class="includes-dlc-box" *ngIf="game.includes_dlc">DLC</span>
                 </div>
                 <div [ngSwitch]="game.playtime">
                   <ng-container *ngSwitchCase="9999">&infin; Hrs.</ng-container>

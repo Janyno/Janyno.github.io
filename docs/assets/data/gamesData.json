@@ -8,7 +8,25 @@
         {
             "name": "Resident Evil 4",
             "status": "not_began",
-            "playtime": 24
+            "playtime": 24,
+            "includes_dlc": true
+        },
+        {
+            "name": "Judgement",
+            "status": "not_began",
+            "playtime": 30
+        },
+        {
+            "name": "Lost Judgement",
+            "status": "not_began",
+            "playtime": 40,
+            "includes_dlc": true
+        },
+        {
+            "name": "Life is Strange: True Colors",
+            "status": "not_began",
+            "playtime": 16,
+            "includes_dlc": true
         }
     ],
     "toRevisit": [
@@ -25,14 +43,6 @@
         },
         {
             "name": "Like a Dragon: Ishin!",
-            "status": "wanna_play"
-        },
-        {
-            "name": "Judgement",
-            "status": "wanna_play"
-        },
-        {
-            "name": "Lost Judgement",
             "status": "wanna_play"
         },
         {

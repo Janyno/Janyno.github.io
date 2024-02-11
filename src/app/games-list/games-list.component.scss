@@ -1,3 +1,10 @@
+@mixin game-box {
+    margin-left: 5px;
+    padding: 0 2px 0 2px;
+    border: solid 1px;
+    font-size: 10px;
+}
+
 .icon {
     font-size: 16px;
 }
@@ -28,17 +35,19 @@
 }
 
 .vr-box {
-    margin-left: 5px;
-    padding: 0 2px 0 2px;
-    border: solid 1px;
-    font-size: 10px;
+    @include game-box;
+
     color: deepskyblue !important;
 }
 
-.all_achievements-box {
-    margin-left: 5px;
-    padding: 0 2px 0 2px;
-    border: solid 1px;
-    font-size: 10px;
+.all-achievements-box {
+    @include game-box;
+
     color: gold !important;
+}
+
+.includes-dlc-box {
+    @include game-box;
+
+    color: chartreuse !important;
 }
