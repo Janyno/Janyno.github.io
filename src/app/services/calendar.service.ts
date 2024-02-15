@@ -234,8 +234,24 @@ export class CalendarService {
         end: this.transformDateForSchedule([15, 2, 2024], [23, 0]), color: this.getColor('lightblue')
       },
       {
+        start: this.transformDateForSchedule([15, 2, 2024], [19, 0]), title: 'RE 4',
+        end: this.transformDateForSchedule([15, 2, 2024], [23, 0]), color: this.getColor('silver')
+      },
+      {
         start: this.transformDateForSchedule([16, 2, 2024], [17, 0]), title: 'RE 4',
-        end: this.transformDateForSchedule([18, 2, 2024], [23, 0]), color: this.getColor('silver')
+        end: this.transformDateForSchedule([16, 2, 2024], [20, 0]), color: this.getColor('silver')
+      },
+      {
+        start: this.transformDateForSchedule([16, 2, 2024], [21, 0]), title: 'Skyrim',
+        end: this.transformDateForSchedule([16, 2, 2024], [23, 59]), color: this.getColor('grey')
+      },
+      {
+        start: this.transformDateForSchedule([17, 2, 2024], [13, 0]), title: 'Hellblade: Senuas Sacrifice',
+        end: this.transformDateForSchedule([17, 2, 2024], [23, 59]), color: this.getColor('royalblue')
+      },
+      {
+        start: this.transformDateForSchedule([18, 2, 2024], [13, 0]), title: 'RE 4',
+        end: this.transformDateForSchedule([18, 2, 2024], [22, 0]), color: this.getColor('silver')
       },
     ];
 

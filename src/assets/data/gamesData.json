@@ -2,12 +2,12 @@
     "toPlay": [
         {
             "name": "Hellblade: Senua's Sacrifice",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 8
         },
         {
             "name": "Resident Evil 4",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 24,
             "includes_dlc": true
         },
