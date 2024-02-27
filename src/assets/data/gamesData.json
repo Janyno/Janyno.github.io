@@ -2,12 +2,12 @@
     "toPlay": [
         {
             "name": "Hellblade: Senua's Sacrifice",
-            "status": "in_progress",
+            "status": "not_began",
             "playtime": 8
         },
         {
             "name": "Resident Evil 4",
-            "status": "in_progress",
+            "status": "not_began",
             "playtime": 24,
             "includes_dlc": true
         },
@@ -27,6 +27,27 @@
             "status": "not_began",
             "playtime": 16,
             "includes_dlc": true
+        },
+        {
+            "name": "Witcher 3",
+            "status": "not_began",
+            "playtime": 100,
+            "includes_dlc": true
+        },
+        {
+            "name": "UNSIGHTED",
+            "status": "not_began",
+            "playtime": 9
+        },
+        {
+            "name": "Drake Hollow",
+            "status": "not_began",
+            "playtime": 12
+        },
+        {
+            "name": "Bramble: The Mountain King",
+            "status": "not_began",
+            "playtime": 5
         }
     ],
     "toRevisit": [
