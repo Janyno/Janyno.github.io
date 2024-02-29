@@ -41,12 +41,12 @@
         },
         {
             "name": "Drake Hollow",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 12
         },
         {
             "name": "Bramble: The Mountain King",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 5
         }
     ],
@@ -55,6 +55,11 @@
             "name": "Dead by Daylight",
             "status": "not_began",
             "playtime": 9999
+        },
+        {
+            "name": "FF15",
+            "status": "not_began",
+            "playtime": 35
         }
     ],
     "wantToPlay": [
