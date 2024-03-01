@@ -258,16 +258,16 @@ export class CalendarService {
         end: this.transformDateForSchedule([1, 3, 2024], [23, 0]), color: this.getColor('purple')
       },
       {
-        start: this.transformDateForSchedule([2, 3, 2024], [10, 30]), title: 'Drake Hollow',
-        end: this.transformDateForSchedule([2, 3, 2024], [18, 0]), color: this.getColor('purple')
+        start: this.transformDateForSchedule([2, 3, 2024], [10, 30]), title: 'Unsighted',
+        end: this.transformDateForSchedule([2, 3, 2024], [18, 0]), color: this.getColor('lightcyan')
       },
       {
         start: this.transformDateForSchedule([2, 3, 2024], [19, 0]), title: 'Bramble: The Mountain King',
         end: this.transformDateForSchedule([2, 3, 2024], [23, 59]), color: this.getColor('forestgreen')
       },
       {
-        start: this.transformDateForSchedule([3, 3, 2024], [11, 0]), title: 'Drake Hollow',
-        end: this.transformDateForSchedule([3, 3, 2024], [23, 59]), color: this.getColor('purple')
+        start: this.transformDatesForSchedule([3, 3, 2024], [11, 0]), title: 'Unsighted / Bramble / Project Zomboid / Hellsplit Arena',
+        end: this.transformDateForSchedule([3, 3, 2024], [23, 59]), color: this.getColor('turquoise')
       },
     ];
 
