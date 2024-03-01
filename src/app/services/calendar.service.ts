@@ -266,7 +266,7 @@ export class CalendarService {
         end: this.transformDateForSchedule([2, 3, 2024], [23, 59]), color: this.getColor('forestgreen')
       },
       {
-        start: this.transformDatesForSchedule([3, 3, 2024], [11, 0]), title: 'Unsighted / Bramble / Project Zomboid / Hellsplit Arena',
+        start: this.transformDateForSchedule([3, 3, 2024], [11, 0]), title: 'Unsighted / Bramble / Project Zomboid / Hellsplit Arena',
         end: this.transformDateForSchedule([3, 3, 2024], [23, 59]), color: this.getColor('turquoise')
       },
     ];
