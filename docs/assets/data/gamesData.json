@@ -33,16 +33,6 @@
             "status": "not_began",
             "playtime": 100,
             "includes_dlc": true
-        },
-        {
-            "name": "UNSIGHTED",
-            "status": "in_progress",
-            "playtime": 9
-        },
-        {
-            "name": "Bramble: The Mountain King",
-            "status": "in_progress",
-            "playtime": 5
         }
     ],
     "toRevisit": [
