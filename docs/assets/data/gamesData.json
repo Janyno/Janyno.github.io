@@ -6,12 +6,6 @@
             "playtime": 8
         },
         {
-            "name": "Resident Evil 4",
-            "status": "not_began",
-            "playtime": 24,
-            "includes_dlc": true
-        },
-        {
             "name": "Judgement",
             "status": "not_began",
             "playtime": 30
@@ -36,16 +30,6 @@
         }
     ],
     "toRevisit": [
-        {
-            "name": "Dead by Daylight",
-            "status": "not_began",
-            "playtime": 9999
-        },
-        {
-            "name": "FF15",
-            "status": "not_began",
-            "playtime": 35
-        }
     ],
     "wantToPlay": [
         {
