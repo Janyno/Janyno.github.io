@@ -330,5 +330,13 @@
     {
         "name": "Tower of God",
         "status": "wait_new_sep"
+    },
+    {
+        "name": "Wind Breaker",
+        "status": "watching"
+    },
+    {
+        "name": "Kaiju No.8",
+        "status": "watching"
     }
 ]
