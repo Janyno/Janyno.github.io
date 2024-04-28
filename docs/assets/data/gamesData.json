@@ -6,13 +6,8 @@
             "playtime": 8
         },
         {
-            "name": "Judgement",
-            "status": "in_progress",
-            "playtime": 30
-        },
-        {
             "name": "Lost Judgement",
-            "status": "not_began",
+            "status": "in_progress",
             "playtime": 40,
             "includes_dlc": true
         },
@@ -38,6 +33,10 @@
         },
         {
             "name": "Like a Dragon: Ishin!",
+            "status": "wanna_play"
+        },
+        {
+            "name": "Like a Dragon: Infinite Wealth",
             "status": "wanna_play"
         },
         {
