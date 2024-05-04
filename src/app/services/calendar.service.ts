@@ -58,7 +58,8 @@ export class CalendarService {
         {title: 'Modern Warfare 3 Open Beta', start: new Date('2023-10-14'), startTime: '19:00', end: new Date('2023-10-16'), color: {...this.colors.red}},
         {title: 'Minecraft Live', start: new Date('2023-10-15'), startTime: '19:00', color: { ...this.colors.yellow }, link: 'https://www.youtube.com/minecraft'},
         {title: 'PAX West', start: new Date('2023-9-1'), end: new Date('2023-9-4') , startTime: '???', color: { ...this.colors.yellow }, link: 'https://www.twitch.tv/PAX/'},
-        {title: 'Game Awards', start: new Date('2023-12-8'), startTime: '???', color: { ...this.colors.yellow }, link: 'https://www.youtube.com/@thegameawards'}
+        {title: 'Game Awards', start: new Date('2023-12-8'), startTime: '???', color: { ...this.colors.yellow }, link: 'https://www.youtube.com/@thegameawards'},
+        {title: 'The Boys Staffel 4', start: new Date('2024-06-13'), startTime: '???', color: { ...this.colors.yellow }, link: 'https://www.amazon.de/gp/video/detail/B09WV7KSHJ/ref=atv_dp_season_select_s3'}
     ]
 
     schedule: ScheduleEntry[] = [
