@@ -14,47 +14,46 @@ export class BackgroundDirective {
 
   @HostListener('window:load', ['$event'])
   @HostListener('window:scroll', ['$event'])
-  setBackgroundBasedOnTime(event: Event) {
-    const currentMonth = new Date().getMonth() + 1; // Month is 0-indexed, so we add 1.
+  setBackgroundBasedOnTime() {
+    const currentMonth = new Date().getMonth() + 1;
     const currentHour = new Date().getHours();
 
-    // Check if it's winter (October to January)
-    const isWinter =
-      currentMonth >= 10 || currentMonth <= 1;
+    const isWinter = currentMonth >= 10 || currentMonth <= 1;
 
-    // Check if it's daytime (between 6 AM and 6 PM)
     const isDaytime = currentHour >= 6 && currentHour < 18;
 
-    let backgroundClass = '';
+    let backgroundImage = '';
 
     if (isWinter) {
-      backgroundClass = isDaytime ? 'winter-day-bg' : 'winter-night-bg';
+      backgroundImage = isDaytime ? 'assets/images/minecraft/winterday.webp' : 'assets/images/minecraft/winter.webp';
     } else {
-      backgroundClass = isDaytime ? this.getRandomDaytimeBackground() : this.getRandomNighttimeBackground();
+      backgroundImage = isDaytime ? this.getRandomDaytimeBackground() : this.getRandomNighttimeBackground();
     }
 
-    this.renderer.setAttribute(this.document.body, 'class', backgroundClass);
+    this.renderer.setStyle(this.document.body, 'background-image', `url(${backgroundImage})`)
+    
   }
 
   private getRandomDaytimeBackground(): string {
-    // List of available daytime background images for other seasons
-    const daytimeImages = ['daytime-bg', 'daytime-bg-alt1'];
+    const daytimeImages = [
+      'assets/images/minecraft/cherry.webp',
+      'assets/images/minecraft/barn.webp',
+      'assets/images/tsushima/nature.webp'
+    ];
 
-    // Get a random index to select a daytime image
     const randomIndex = Math.floor(Math.random() * daytimeImages.length);
 
-    // Return the selected daytime image class
     return daytimeImages[randomIndex];
   }
 
   private getRandomNighttimeBackground(): string {
-    // List of available nighttime background images for other seasons
-    const nighttimeImages = ['nighttime-bg', 'nighttime-bg-alt1'];
+    const nighttimeImages = [
+      'assets/images/minecraft/nightsea.webp', 
+      'assets/images/minecraft/trainstation.webp'
+    ];
 
-    // Get a random index to select a nighttime image
     const randomIndex = Math.floor(Math.random() * nighttimeImages.length);
 
-    // Return the selected nighttime image class
     return nighttimeImages[randomIndex];
   }
 }

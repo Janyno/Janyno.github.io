@@ -5,6 +5,10 @@
 $dark-text: rgba(255, 255, 255, 0.55);
 $semi-trans-background: rgba(113, 111, 111, 0.4);
 
+html {
+  height: 100vh;
+}
+
 .calendar {
   @include cal-theme(
   (
@@ -27,43 +31,6 @@ $semi-trans-background: rgba(113, 111, 111, 0.4);
   backdrop-filter: blur(5px);
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-/* Responsive Background Images */
-.daytime-bg,
-.daytime-bg-alt1,
-.nighttime-bg,
-.nighttime-bg-alt1,
-.winter-day-bg,
-.winter-night-bg {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.daytime-bg {
-  background-image: url('assets/images/minecraftScreenshots/cherry.webp');
-}
-
-.daytime-bg-alt1 {
-  background-image: url('assets/images/minecraftScreenshots/barn.webp');
-}
-
-.nighttime-bg {
-  background-image: url('assets/images/minecraftScreenshots/nightsea.webp');
-}
-
-.nighttime-bg-alt1 {
-  background-image: url('assets/images/minecraftScreenshots/trainstation.webp');
-}
-
-.winter-day-bg {
-  background-image: url('assets/images/minecraftScreenshots/winterday.webp');
-}
-
-/* Winter Night background */
-.winter-night-bg {
-  background-image: url('assets/images/minecraftScreenshots/winter.webp');
 }
 
 /* Scrollbar Styles */
