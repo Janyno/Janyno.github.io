@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { CalendarEvent, CalendarView } from 'angular-calendar';
-import { CalendarService } from '../services/calendar.service';
+import { CalendarService } from '../../services/calendar.service';
 import { addMonths, subMonths } from 'date-fns';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 

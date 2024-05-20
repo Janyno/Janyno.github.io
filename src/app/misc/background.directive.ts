@@ -38,7 +38,8 @@ export class BackgroundDirective {
     const daytimeImages = [
       'assets/images/minecraft/cherry.webp',
       'assets/images/minecraft/barn.webp',
-      'assets/images/tsushima/nature.webp'
+      'assets/images/tsushima/nature.webp',
+      'assets/images/tsushima/nature2.webp'
     ];
 
     const randomIndex = Math.floor(Math.random() * daytimeImages.length);

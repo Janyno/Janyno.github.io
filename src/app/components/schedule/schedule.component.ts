@@ -4,8 +4,8 @@ import { CalendarView, CalendarEvent } from 'angular-calendar';
 import { addWeeks, subWeeks, startOfWeek, endOfWeek } from 'date-fns';
 import { formatDate, registerLocaleData } from '@angular/common';
 import localeDe from '@angular/common/locales/de';
-import { ScheduleEntry } from '../model/calendar';
-import { CalendarService } from '../services/calendar.service';
+import { ScheduleEntry } from '../../model/calendar';
+import { CalendarService } from '../../services/calendar.service';
 
 registerLocaleData(localeDe, 'de');
 

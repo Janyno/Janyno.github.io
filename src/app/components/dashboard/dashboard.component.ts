@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { GamesService } from '../services/games.service';
-import { DashboardData } from '../model/dashboardData';
-import { AnimeService } from '../services/anime.service';
-import { EventEntry, GameReleaseEntry, ScheduleEntry } from '../model/calendar';
-import { CalendarService } from '../services/calendar.service';
+import { GamesService } from '../../services/games.service';
+import { DashboardData } from '../../model/dashboardData';
+import { AnimeService } from '../../services/anime.service';
+import { EventEntry, GameReleaseEntry, ScheduleEntry } from '../../model/calendar';
+import { CalendarService } from '../../services/calendar.service';
 
 @Component({
   selector: 'app-dashboard',

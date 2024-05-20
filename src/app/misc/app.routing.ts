@@ -1,9 +1,9 @@
 import { Routes } from "@angular/router";
-import { GamesListComponent } from "../games-list/games-list.component";
-import { DashboardComponent } from "../dashboard/dashboard.component";
-import { AnimeListComponent } from "../anime-list/anime-list.component";
-import { CalendarComponent } from "../calendar/calendar.component";
-import { ScheduleComponent } from "../schedule/schedule.component";
+import { GamesListComponent } from "../components/games-list/games-list.component";
+import { DashboardComponent } from "../components/dashboard/dashboard.component";
+import { AnimeListComponent } from "../components/anime-list/anime-list.component";
+import { CalendarComponent } from "../components/calendar/calendar.component";
+import { ScheduleComponent } from "../components/schedule/schedule.component";
 
 export const APP_ROUTES: Routes = [
     {path: '', component: DashboardComponent},
