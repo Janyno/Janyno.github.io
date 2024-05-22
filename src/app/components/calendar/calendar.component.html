@@ -16,14 +16,14 @@
 <ng-template #eventModal let-modal>
   <div class="modal-header">
     <h5 class="modal-title">{{ selectedEvent?.title }}</h5>
-    <button type="button" class="close" aria-label="Close" (click)="closeEventModal()">
+    <button type="button" class="close btn" aria-label="Close" (click)="closeEventModal()">
       <span aria-hidden="true">X</span>
     </button>
   </div>
   <div class="modal-body">
     <p>Start Time: {{ getStartTime(selectedEvent) }}</p>
     <p *ngIf="getLink(selectedEvent)">Link: 
-      <a target="_blank" [href]="getLink(selectedEvent)">{{getLink(selectedEvent)}}</a>
+      <a target="_blank" class="link" [href]="getLink(selectedEvent)">{{getLink(selectedEvent)}}</a>
     </p>
   </div>
 </ng-template>

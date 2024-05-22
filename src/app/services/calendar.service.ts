@@ -36,30 +36,17 @@ export class CalendarService {
     }
 
     gameReleases: GameReleaseEntry[] = [
-        {title: 'Starfield', start: new Date('2023-9-01'), color: { ...this.colors.blue }},
-        {title: 'Payday 3', start: new Date('2023-9-18'), color: { ...this.colors.blue }},
-        {title: 'Forza Motorsport', start: new Date('2023-10-9'), color: { ...this.colors.blue }},
-        {title: 'Cities Skylines 2', start: new Date('2023-10-24'), color: { ...this.colors.blue }},
-        {title: 'Assassins Creed Mirage', start: new Date('2023-10-5'), color: { ...this.colors.blue }},
-        {title: 'The Crew Motorfest', start: new Date('2023-9-14'), color: { ...this.colors.blue }},
-        {title: 'Alan Wake 2', start: new Date('2023-10-27'), color: { ...this.colors.blue }},
-        {title: 'Like a Dragon Gaiden', start: new Date('2023-11-9'), color: { ...this.colors.blue }},
-        {title: 'Call of Duty: Modern Warfare 3', start: new Date('2023-11-3'), color: { ...this.colors.blue }},
-        {title: 'Avatar: Frontiers of Pandora', start: new Date('2023-12-7'), color: { ...this.colors.blue }},
-        {title: 'Cyberpunk 2077: Phantom Liberty', start: new Date('2023-9-26'), color: { ...this.colors.blue }},
-        {title: 'Streets of Rouge 2', start: new Date('2024-12-31'), color: { ...this.colors.blue }},
-        {title: 'Eternights', start: new Date('2023-9-12'), color: { ...this.colors.blue }},
-        {title: 'Robocop: Rogue City', start: new Date('2023-11-2'), color: { ...this.colors.blue }},
-        {title: 'Star Trucker', start: new Date('2024-12-31'), color: { ...this.colors.blue }}
+        {title: 'Starfield', start: new Date('2023-9-01'), color: { ...this.colors.blue }}
       ]
 
     events: EventEntry[] = [
-        {title: 'Gamescom Opening Night', start: new Date('2023-8-22'), startTime: '19:30', color: { ...this.colors.yellow }, link: 'https://www.youtube.com/watch?v=eqh-rDzgVwQ'},
-        {title: 'Modern Warfare 3 Open Beta', start: new Date('2023-10-14'), startTime: '19:00', end: new Date('2023-10-16'), color: {...this.colors.red}},
-        {title: 'Minecraft Live', start: new Date('2023-10-15'), startTime: '19:00', color: { ...this.colors.yellow }, link: 'https://www.youtube.com/minecraft'},
-        {title: 'PAX West', start: new Date('2023-9-1'), end: new Date('2023-9-4') , startTime: '???', color: { ...this.colors.yellow }, link: 'https://www.twitch.tv/PAX/'},
-        {title: 'Game Awards', start: new Date('2023-12-8'), startTime: '???', color: { ...this.colors.yellow }, link: 'https://www.youtube.com/@thegameawards'},
-        {title: 'The Boys Staffel 4', start: new Date('2024-06-13'), startTime: '???', color: { ...this.colors.yellow }, link: 'https://www.amazon.de/gp/video/detail/B09WV7KSHJ/ref=atv_dp_season_select_s3'}
+        {title: 'Summer Game Fest Start Showcase', start: new Date('2024-06-07'), startTime: '23:00', color: { ...this.colors.red }, link: ''},
+        {title: 'Xbox Showcase', start: new Date('2024-06-09'), startTime: '19:00', color: { ...this.colors.blue }, link: ''},
+        {title: 'Wholesome Direct', start: new Date('2024-06-08'), startTime: '18:00', color: { ...this.colors.yellow }, link: ''},
+        {title: 'Latin American Games Showcase', start: new Date('2024-06-08'), startTime: '19:00', color: { ...this.colors.red }, link: ''},
+        {title: 'Woman Led Studios', start: new Date('2024-06-08'), startTime: '20:30', color: { ...this.colors.blue }, link: ''},
+        {title: 'PC Gaming Show', start: new Date('2024-06-09'), startTime: '22:00', color: { ...this.colors.yellow }, link: ''},
+        {title: 'The Boys Staffel 4', start: new Date('2024-06-13'), startTime: '???', color: { ...this.colors.red }, link: 'https://www.amazon.de/gp/video/detail/B09WV7KSHJ/ref=atv_dp_season_select_s3'}
     ]
 
     schedule: ScheduleEntry[] = [

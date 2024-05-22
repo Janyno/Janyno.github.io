@@ -39,7 +39,10 @@ export class BackgroundDirective {
       'assets/images/minecraft/cherry.webp',
       'assets/images/minecraft/barn.webp',
       'assets/images/tsushima/nature.webp',
-      'assets/images/tsushima/nature2.webp'
+      'assets/images/tsushima/nature2.webp',
+      'assets/images/tsushima/nature3.webp',
+      'assets/images/tsushima/nature4.webp',
+      'assets/images/tsushima/nature5.webp',
     ];
 
     const randomIndex = Math.floor(Math.random() * daytimeImages.length);
@@ -50,7 +53,11 @@ export class BackgroundDirective {
   private getRandomNighttimeBackground(): string {
     const nighttimeImages = [
       'assets/images/minecraft/nightsea.webp', 
-      'assets/images/minecraft/trainstation.webp'
+      'assets/images/minecraft/trainstation.webp',
+      'assets/images/tsushima/night1.webp',
+      'assets/images/tsushima/night2.webp',
+      'assets/images/tsushima/night3.webp',
+      'assets/images/tsushima/night4.webp',
     ];
 
     const randomIndex = Math.floor(Math.random() * nighttimeImages.length);

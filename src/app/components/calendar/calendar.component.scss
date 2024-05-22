@@ -3,6 +3,10 @@
     font-weight: bold;
 }
 
+.link {
+    word-break: break-all;
+}
+
 ::ng-deep .cal-month-view .cal-day-badge {
     display: none;
 }
