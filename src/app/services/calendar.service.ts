@@ -36,7 +36,7 @@ export class CalendarService {
     }
 
     gameReleases: GameReleaseEntry[] = [
-        {title: 'Starfield', start: new Date('2023-9-01'), color: { ...this.colors.blue }}
+        {title: 'Stalker 2: Heart of Chernobyl', start: new Date('2024-09-05'), color: { ...this.colors.blue }}
       ]
 
     events: EventEntry[] = [
