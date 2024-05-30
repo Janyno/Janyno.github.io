@@ -51,9 +51,25 @@ export class CalendarService {
 
     schedule: ScheduleEntry[] = [
       {
-        start: this.transformDateForSchedule([4, 10, 2023], [16, 0]), title: 'MONKEY GAMEEEEEE', 
-        end: this.transformDateForSchedule([4, 10, 2023], [22, 0]), color: this.getColor('saddlebrown')
-      }
+        start: this.transformDateForSchedule([30, 5, 2024], [18, 0]), title: 'Senua 1', 
+        end: this.transformDateForSchedule([30, 5, 2024], [20, 0]), color: this.getColor('cornflowerblue')
+      },
+      {
+        start: this.transformDateForSchedule([31, 5, 2024], [16, 0]), title: 'Ghost of Tsushima', 
+        end: this.transformDateForSchedule([31, 5, 2024], [23, 0]), color: this.getColor('gold')
+      },
+      {
+        start: this.transformDateForSchedule([1, 6, 2024], [12, 0]), title: 'Ghost of Tsushima', 
+        end: this.transformDateForSchedule([1, 6, 2024], [18, 0]), color: this.getColor('gold')
+      },
+      {
+        start: this.transformDateForSchedule([1, 6, 2024], [18, 0]), title: 'Senua 1', 
+        end: this.transformDateForSchedule([1, 6, 2024], [23, 0]), color: this.getColor('cornflowerblue')
+      },
+      {
+        start: this.transformDateForSchedule([2, 6, 2024], [10, 0]), title: 'Ghost of Tsushima', 
+        end: this.transformDateForSchedule([2, 6, 2024], [22, 0]), color: this.getColor('gold')
+      },
     ];
 
     getCalendarList() {
